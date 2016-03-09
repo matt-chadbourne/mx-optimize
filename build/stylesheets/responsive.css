@@ -1,45 +1,182 @@
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-ms-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-o-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes enter-top {
+  0% {
+    top: -50px; }
+  100% {
+    top: 0; } }
+@-moz-keyframes enter-top {
+  0% {
+    top: -50px; }
+  100% {
+    top: 0; } }
+@-ms-keyframes enter-top {
+  0% {
+    top: -50px; }
+  100% {
+    top: 0; } }
+@-o-keyframes enter-top {
+  0% {
+    top: -50px; }
+  100% {
+    top: 0; } }
+@keyframes enter-top {
+  0% {
+    top: -50px; }
+  100% {
+    top: 0; } }
+@-webkit-keyframes enter-right {
+  0% {
+    right: -50px; }
+  100% {
+    right: 0; } }
+@-moz-keyframes enter-right {
+  0% {
+    right: -50px; }
+  100% {
+    right: 0; } }
+@-ms-keyframes enter-right {
+  0% {
+    right: -50px; }
+  100% {
+    right: 0; } }
+@-o-keyframes enter-right {
+  0% {
+    right: -50px; }
+  100% {
+    right: 0; } }
+@keyframes enter-right {
+  0% {
+    right: -50px; }
+  100% {
+    right: 0; } }
+@-webkit-keyframes arrow-bounce {
+  0% {
+    position: relative;
+    bottom: 20px; }
+  50% {
+    position: relative;
+    bottom: 0; }
+  100% {
+    position: relative;
+    bottom: 20px; } }
+@-moz-keyframes arrow-bounce {
+  0% {
+    position: relative;
+    bottom: 20px; }
+  50% {
+    position: relative;
+    bottom: 0; }
+  100% {
+    position: relative;
+    bottom: 20px; } }
+@-ms-keyframes arrow-bounce {
+  0% {
+    position: relative;
+    bottom: 20px; }
+  50% {
+    position: relative;
+    bottom: 0; }
+  100% {
+    position: relative;
+    bottom: 20px; } }
+@-o-keyframes arrow-bounce {
+  0% {
+    position: relative;
+    bottom: 20px; }
+  50% {
+    position: relative;
+    bottom: 0; }
+  100% {
+    position: relative;
+    bottom: 20px; } }
+@keyframes arrow-bounce {
+  0% {
+    position: relative;
+    bottom: 20px; }
+  50% {
+    position: relative;
+    bottom: 0; }
+  100% {
+    position: relative;
+    bottom: 20px; } }
 @media screen and (max-width: 568px) {
-  /* line 10, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/responsive.scss */
+  /* line 12, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/responsive.scss */
   .hideMobile {
     display: none !important; } }
-@media screen and (min-width: 569px) and (max-width: 959px) {
-  /* line 20, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/responsive.scss */
+@media screen and (max-width: 1079px) {
+  /* line 22, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/responsive.scss */
+  .hideMoTab {
+    display: none !important; } }
+@media screen and (min-width: 569px) and (max-width: 1079px) {
+  /* line 31, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/responsive.scss */
   .hideTablet {
     display: none !important; } }
 @media screen and (min-width: 569px) {
-  /* line 29, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/responsive.scss */
+  /* line 40, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/responsive.scss */
   h2 {
     font-size: 2.25em; }
 
-  /* line 33, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/responsive.scss */
+  /* line 44, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/responsive.scss */
   .hideDeskTab {
-    display: none !important; } }
-@media screen and (min-width: 960px) {
-  /* line 42, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/responsive.scss */
-  .wrapper {
-    margin: 0 auto;
-    width: 960px; }
+    display: none !important; }
 
-  /* line 46, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/responsive.scss */
+  /* line 48, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/responsive.scss */
+  .wedgebox {
+    margin: auto auto -30px -40px;
+    border-width: 30px 40px 0; } }
+@media screen and (min-width: 1080px) {
+  /* line 58, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/responsive.scss */
+  .wrap {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 5%; }
+
+  /* line 63, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/responsive.scss */
   .centerer {
     display: inline-block;
     vertical-align: middle; }
 
-  /* line 50, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/responsive.scss */
+  /* line 67, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/responsive.scss */
   .full {
     float: left;
     width: 100%; }
 
-  /* line 55, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/responsive.scss */
+  /* line 72, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/responsive.scss */
   .left {
     float: left;
-    width: 50%; }
+    margin-right: 2.5% !important;
+    width: 47.5% !important; }
 
-  /* line 60, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/responsive.scss */
+  /* line 78, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/responsive.scss */
   .right {
     float: right;
-    width: 50%; }
+    margin-left: 2.5% !important;
+    width: 47.5% !important; }
 
-  /* line 65, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/responsive.scss */
+  /* line 84, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/responsive.scss */
   .hideDesktop {
     display: none !important; } }

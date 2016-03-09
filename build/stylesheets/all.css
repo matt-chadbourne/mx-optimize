@@ -1,61 +1,254 @@
-/* line 10, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/all.scss */
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-ms-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-o-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes enter-top {
+  0% {
+    top: -50px; }
+  100% {
+    top: 0; } }
+@-moz-keyframes enter-top {
+  0% {
+    top: -50px; }
+  100% {
+    top: 0; } }
+@-ms-keyframes enter-top {
+  0% {
+    top: -50px; }
+  100% {
+    top: 0; } }
+@-o-keyframes enter-top {
+  0% {
+    top: -50px; }
+  100% {
+    top: 0; } }
+@keyframes enter-top {
+  0% {
+    top: -50px; }
+  100% {
+    top: 0; } }
+@-webkit-keyframes enter-right {
+  0% {
+    right: -50px; }
+  100% {
+    right: 0; } }
+@-moz-keyframes enter-right {
+  0% {
+    right: -50px; }
+  100% {
+    right: 0; } }
+@-ms-keyframes enter-right {
+  0% {
+    right: -50px; }
+  100% {
+    right: 0; } }
+@-o-keyframes enter-right {
+  0% {
+    right: -50px; }
+  100% {
+    right: 0; } }
+@keyframes enter-right {
+  0% {
+    right: -50px; }
+  100% {
+    right: 0; } }
+@-webkit-keyframes arrow-bounce {
+  0% {
+    position: relative;
+    bottom: 20px; }
+  50% {
+    position: relative;
+    bottom: 0; }
+  100% {
+    position: relative;
+    bottom: 20px; } }
+@-moz-keyframes arrow-bounce {
+  0% {
+    position: relative;
+    bottom: 20px; }
+  50% {
+    position: relative;
+    bottom: 0; }
+  100% {
+    position: relative;
+    bottom: 20px; } }
+@-ms-keyframes arrow-bounce {
+  0% {
+    position: relative;
+    bottom: 20px; }
+  50% {
+    position: relative;
+    bottom: 0; }
+  100% {
+    position: relative;
+    bottom: 20px; } }
+@-o-keyframes arrow-bounce {
+  0% {
+    position: relative;
+    bottom: 20px; }
+  50% {
+    position: relative;
+    bottom: 0; }
+  100% {
+    position: relative;
+    bottom: 20px; } }
+@keyframes arrow-bounce {
+  0% {
+    position: relative;
+    bottom: 20px; }
+  50% {
+    position: relative;
+    bottom: 0; }
+  100% {
+    position: relative;
+    bottom: 20px; } }
+/* line 13, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
 * {
   box-sizing: border-box;
-  font-family: 'Proxima Nova Light', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: anti-aliased;
-  font-smoothing: anti-aliased;
+  font-family: 'Proxima Nova', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
   font-weight: normal;
   font-style: normal; }
 
-/* line 19, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/all.scss */
+/* line 22, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
 body, html {
+  position: relative;
   margin: 0 auto;
+  padding: 0;
   width: 100%;
-  background-color: #ffffff;
-  border: none;
+  height: 100%;
   color: #262626;
   font-size: 1em;
   letter-spacing: 1px;
   text-align: initial;
   text-transform: none;
-  height: 100%;
-  padding: 0; }
-  /* line 17, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/_mixins.scss */
-  body else, html else {
-    font-family: 'Proxima Nova Light', Helvetica, Arial, sans-serif; }
+  font-family: 'Proxima Nova Light', Helvetica, Arial, sans-serif;
+  background-color: #fff; }
 
-/* line 27, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/all.scss */
-.site-container {
-  min-height: 100%; }
+/* line 33, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
+b, strong {
+  font-family: 'Proxima Nova Bold', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  opacity: 1; }
 
-/* line 31, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/all.scss */
+/* line 39, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
+.band {
+  display: block;
+  position: relative;
+  padding: 80px 0;
+  width: 100%; }
+
+/* line 46, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
+.wrap {
+  margin: 0;
+  padding: 0 5%;
+  width: 100%;
+  max-width: 960px;
+  height: auto;
+  overflow: auto; }
+
+/* line 55, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
 a {
   text-decoration: none;
-  color: #262626; }
-  /* line 35, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/all.scss */
+  color: #262626;
+  cursor: pointer !important; }
+  /* line 60, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
   a:hover, a:active, a:visited {
     color: #262626; }
 
-/* line 40, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/all.scss */
+/* line 65, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
+h1, h2, h3, h4, h5, h6 {
+  text-rendering: optimizelegibility; }
+
+/* line 70, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
+h1 {
+  position: relative;
+  margin: 0; }
+
+/* line 75, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
+h2 {
+  margin: 0;
+  padding: 15px 0;
+  font-size: 1.5rem;
+  letter-spacing: 0.325em;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Proxima Nova Light', Helvetica, Arial, sans-serif;
+  line-height: 29px; }
+
+/* line 82, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
+h3 {
+  margin: 0 0 50px;
+  padding: 15px 0;
+  font-size: 1.5rem;
+  letter-spacing: 0.275em;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Proxima Nova Light', Helvetica, Arial, sans-serif;
+  line-height: 29px;
+  border: solid #262626;
+  border-width: 1px 0; }
+
+/* line 92, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
+ul.checked {
+  list-style: none; }
+  /* line 96, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
+  ul.checked li:before {
+    display: inline-block;
+    margin: 1px 10px 0 -34px;
+    content: url("/hubfs/icons-products/check-teal.svg");
+    width: 24px;
+    vertical-align: top; }
+
+/* line 107, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
 .btn {
+  margin: 0 auto;
   padding: 10px 0 !important;
   width: 100%;
-  height: auto;
   max-width: 288px;
-  background: url("../images/button-teal.svg") no-repeat center center;
+  background: url("/hubfs/icons-products/button-teal.svg") no-repeat center center;
   background-size: contain;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
   -ms-transform: translateY(0);
   -o-transform: translateY(0);
   transform: translateY(0); }
-  /* line 50, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/all.scss */
+  /* line 118, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
   .btn a:link, .btn a:visited, .btn a:hover, .btn a:active {
-    display: block; }
-  /* line 57, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/all.scss */
+    display: block;
+    width: 100%;
+    color: #fff;
+    font-size: 1.25rem !important;
+    letter-spacing: 0.2em;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Proxima Nova', Helvetica, Arial, sans-serif; }
+  /* line 128, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
   .btn a:hover {
-    color: #ffffff !important; }
-  /* line 62, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/all.scss */
+    color: #fff !important; }
+  /* line 133, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
   .btn:active {
     -webkit-transform: translateY(3px);
     -moz-transform: translateY(3px);
@@ -68,665 +261,1763 @@ a {
     -o-transition: all 0.1s ease-in-out !important;
     transition: all 0.1s ease-in-out !important; }
 
-/* line 69, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/all.scss */
+/* line 140, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
 .hidden {
   display: none !important; }
 
-/* line 73, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/all.scss */
+/* line 144, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
 .disable-scroll {
   height: 100%;
   overflow: hidden; }
 
-/* line 83, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/all.scss */
-.helios .btn {
-  background: url("../images/button-blue.svg") no-repeat center center; }
-  /* line 87, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/all.scss */
-  .helios .btn a:link, .helios .btn a:visited, .helios .btn a:hover, .helios .btn a:active {
-    color: #ffffff !important; }
-/* line 99, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/all.scss */
-.helios nav ul li a:hover {
-  color: #025d96 !important; }
+/* line 153, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
+.bgc-none {
+  background-color: transparent; }
 
-/* line 108, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/all.scss */
-.widenet .btn {
-  background: url("../images/button-teal.svg") no-repeat center center; }
-  /* line 112, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/all.scss */
-  .widenet .btn a:link, .widenet .btn a:visited, .widenet .btn a:hover, .widenet .btn a:active {
-    color: #ffffff !important; }
-/* line 124, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/all.scss */
-.widenet nav ul li a:hover {
-  color: #059e9a !important; }
+/* line 157, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
+.bgc-white {
+  background-color: #fff; }
+  /* line 160, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
+  .bgc-white .wedgebox {
+    border-top-color: #fff; }
 
-/* line 133, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/all.scss */
-.nexus .btn {
-  background: url("../images/button-green.svg") no-repeat center center; }
-  /* line 137, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/all.scss */
-  .nexus .btn a:link, .nexus .btn a:visited, .nexus .btn a:hover, .nexus .btn a:active {
-    color: #ffffff !important; }
-/* line 149, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/all.scss */
-.nexus nav ul li a:hover {
-  color: #39b54a !important; }
+/* line 165, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
+.bgc-grey {
+  background-color: #f5f5f5; }
+  /* line 168, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
+  .bgc-grey .wedgebox {
+    border-top-color: #f5f5f5; }
 
-/* line 158, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/all.scss */
-.hydra .btn {
-  background: url("../images/button-orange.svg") no-repeat center center; }
-  /* line 162, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/all.scss */
-  .hydra .btn a:link, .hydra .btn a:visited, .hydra .btn a:hover, .hydra .btn a:active {
-    color: #ffffff !important; }
-/* line 174, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/all.scss */
-.hydra nav ul li a:hover {
-  color: #fa7930 !important; }
+/* line 173, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
+.bgc-master {
+  background-color: #059e9a; }
+  /* line 176, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
+  .bgc-master .btn {
+    background: url("/hubfs/icons-products/button-white.svg") no-repeat center center !important; }
+    /* line 180, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
+    .bgc-master .btn a:link, .bgc-master .btn a:visited, .bgc-master .btn a:hover, .bgc-master .btn a:active {
+      color: #059e9a; }
+    /* line 187, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
+    .bgc-master .btn a:hover {
+      color: #059e9a !important; }
+  /* line 193, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
+  .bgc-master .wedgebox {
+    border-top-color: #059e9a; }
 
-/* line 183, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/all.scss */
-.insight .btn {
-  background: url("../images/button-yellow.svg") no-repeat center center; }
-  /* line 187, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/all.scss */
-  .insight .btn a:link, .insight .btn a:visited, .insight .btn a:hover, .insight .btn a:active {
-    color: #262626 !important; }
-/* line 199, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/all.scss */
-.insight nav ul li a:hover {
-  color: #ffc125 !important; }
+/* line 202, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
+.wedgebox {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin: auto auto -15px -20px;
+  width: 0;
+  height: 0;
+  border-width: 15px 20px 0;
+  border-style: solid;
+  z-index: 600;
+  border-color: transparent; }
 
-/* line 208, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/all.scss */
-.target .btn {
-  background: url("../images/button-red.svg") no-repeat center center; }
-  /* line 212, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/all.scss */
-  .target .btn a:link, .target .btn a:visited, .target .btn a:hover, .target .btn a:active {
-    color: #ffffff !important; }
-/* line 224, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/all.scss */
-.target nav ul li a:hover {
-  color: #ee4235 !important; }
-
-/* line 233, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/all.scss */
-.moneydesktop .btn {
-  background: url("../images/button-mdgreen.svg") no-repeat center center; }
-  /* line 237, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/all.scss */
-  .moneydesktop .btn a:link, .moneydesktop .btn a:visited, .moneydesktop .btn a:hover, .moneydesktop .btn a:active {
-    color: #ffffff !important; }
-/* line 249, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/all.scss */
-.moneydesktop nav ul li a:hover {
-  color: #8dc63f !important; }
-
-/* line 261, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/all.scss */
+/* line 219, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
 .clearfix:before,
 .clearfix:after {
   content: '';
   display: table; }
 
-/* line 267, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/all.scss */
+/* line 225, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
 .clearfix:after {
   clear: both; }
 
-/* line 4, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-header {
+/* line 4, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+.header-container-wrapper {
   position: fixed;
-  float: none;
-  display: block;
   width: 100%;
   height: 60px;
-  background: rgba(38, 38, 38, 0.98);
-  z-index: 999;
-  -webkit-transition: height 0.45s ease-in-out;
-  -moz-transition: height 0.45s ease-in-out;
-  -ms-transition: height 0.45s ease-in-out;
-  -o-transition: height 0.45s ease-in-out;
-  transition: height 0.45s ease-in-out; }
-  /* line 12, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-  header .nav-wrap {
-    margin: 0;
-    padding: 0 5%;
-    height: auto;
-    -webkit-transition: height 0.45s ease-in-out;
-    -moz-transition: height 0.45s ease-in-out;
-    -ms-transition: height 0.45s ease-in-out;
-    -o-transition: height 0.45s ease-in-out;
-    transition: height 0.45s ease-in-out; }
-    /* line 18, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-    header .nav-wrap .nav-bar {
-      position: absolute;
-      top: 0;
-      right: auto;
-      bottom: auto;
-      left: 0;
-      width: 100%;
-      height: 60px;
-      z-index: 999;
-      -webkit-transition: height 0.45s ease-in-out;
-      -moz-transition: height 0.45s ease-in-out;
-      -ms-transition: height 0.45s ease-in-out;
-      -o-transition: height 0.45s ease-in-out;
-      transition: height 0.45s ease-in-out; }
-      /* line 26, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-      header .nav-wrap .nav-bar .nav-logo {
-        z-index: 1000; }
-        /* line 29, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-        header .nav-wrap .nav-bar .nav-logo .logo {
-          position: absolute;
-          top: 50%;
-          right: auto;
-          bottom: auto;
-          left: 5%;
-          width: 60px;
-          height: 27px;
-          background: url("../images/mx-logo-white.svg") no-repeat center center;
-          -webkit-transform: translateY(-50%);
-          -moz-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-          -o-transform: translateY(-50%);
-          transform: translateY(-50%);
-          -webkit-transition: all 0.45s ease-in-out;
-          -moz-transition: all 0.45s ease-in-out;
-          -ms-transition: all 0.45s ease-in-out;
-          -o-transition: all 0.45s ease-in-out;
-          transition: all 0.45s ease-in-out; }
-      /* line 41, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-      header .nav-wrap .nav-bar #nav-icon-wrap {
-        position: absolute;
-        top: 50%;
-        right: 5%;
-        bottom: auto;
-        left: auto;
-        width: 110px;
-        height: 25px;
-        opacity: 1;
-        cursor: pointer;
-        z-index: 1000;
-        -webkit-transform: translateY(-50%);
-        -moz-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        -o-transform: translateY(-50%);
-        transform: translateY(-50%);
-        -webkit-transition: all 0.25s ease-in-out;
-        -moz-transition: all 0.25s ease-in-out;
-        -ms-transition: all 0.25s ease-in-out;
-        -o-transition: all 0.25s ease-in-out;
-        transition: all 0.25s ease-in-out; }
-        /* line 54, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-        header .nav-wrap .nav-bar #nav-icon-wrap .nav-icon-placement {
-          position: absolute;
-          top: 50%;
-          right: 0;
-          bottom: auto;
-          left: auto;
-          -webkit-transform: translateY(-50%);
-          -moz-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-          -o-transform: translateY(-50%);
-          transform: translateY(-50%); }
-          /* line 60, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-          header .nav-wrap .nav-bar #nav-icon-wrap .nav-icon-placement #nav-icon {
+  color: #fff;
+  background-color: rgba(38, 38, 38, 0.9);
+  overflow: hidden;
+  z-index: 9999;
+  -webkit-transition: all 0.45s ease-in-out;
+  -moz-transition: all 0.45s ease-in-out;
+  -ms-transition: all 0.45s ease-in-out;
+  -o-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out; }
+  /* line 15, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+  .header-container-wrapper .header-container {
+    position: relative;
+    top: -2px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+    height: 100%;
+    background-color: transparent; }
+    /* line 24, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+    .header-container-wrapper .header-container .row-fluid-wrapper {
+      position: relative;
+      height: 100%;
+      max-height: 60px; }
+      /* line 29, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+      .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid {
+        position: relative;
+        width: 100%; }
+        /* line 33, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+        .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .mx-logo-vector {
+          position: relative;
+          top: 0;
+          width: 100%;
+          height: 60px; }
+          /* line 39, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+          .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .mx-logo-vector .cell-wrapper {
             position: relative;
-            width: 40px;
-            height: 20px; }
-            /* line 65, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-            header .nav-wrap .nav-bar #nav-icon-wrap .nav-icon-placement #nav-icon span {
-              position: absolute;
+            height: 100%; }
+            /* line 43, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+            .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .mx-logo-vector .cell-wrapper .hs_cos_wrapper_type_custom_widget {
               display: block;
+              position: relative;
+              height: 100%; }
+              /* line 48, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+              .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .mx-logo-vector .cell-wrapper .hs_cos_wrapper_type_custom_widget .nav-logo {
+                height: 60px;
+                z-index: 1000; }
+                /* line 52, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+                .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .mx-logo-vector .cell-wrapper .hs_cos_wrapper_type_custom_widget .nav-logo .logo {
+                  position: absolute;
+                  top: 50%;
+                  left: 5%;
+                  width: 80px;
+                  height: 33px;
+                  background: url("/hubfs/icons-products/MX-White-Web.svg") no-repeat center center;
+                  -webkit-transform: translateY(-50%);
+                  -moz-transform: translateY(-50%);
+                  -ms-transform: translateY(-50%);
+                  -o-transform: translateY(-50%);
+                  transform: translateY(-50%);
+                  -webkit-transition: all 0.45s ease-in-out;
+                  -moz-transition: all 0.45s ease-in-out;
+                  -ms-transition: all 0.45s ease-in-out;
+                  -o-transition: all 0.45s ease-in-out;
+                  transition: all 0.45s ease-in-out; }
+        /* line 70, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+        .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .header-menu .cell-wrapper.layout-widget-wrapper {
+          height: 100%;
+          -webkit-transition: height 0.45s ease-in-out;
+          -moz-transition: height 0.45s ease-in-out;
+          -ms-transition: height 0.45s ease-in-out;
+          -o-transition: height 0.45s ease-in-out;
+          transition: height 0.45s ease-in-out; }
+          /* line 75, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+          .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .header-menu .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper_widget {
+            display: block;
+            position: relative;
+            height: 100%;
+            -webkit-transition: all 0.45s ease-in-out;
+            -moz-transition: all 0.45s ease-in-out;
+            -ms-transition: all 0.45s ease-in-out;
+            -o-transition: all 0.45s ease-in-out;
+            transition: all 0.45s ease-in-out; }
+            /* line 82, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+            .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .header-menu .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper_widget .hs-menu-wrapper {
+              display: block;
+              position: absolute;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
               width: 100%;
-              height: 2px;
-              background-color: #059e9a;
-              border-radius: 9px;
-              opacity: 1;
-              -webkit-transform: rotate(0deg) scale(1, 1);
-              -moz-transform: rotate(0deg) scale(1, 1);
-              -ms-transform: rotate(0deg) scale(1, 1);
-              -o-transform: rotate(0deg) scale(1, 1);
-              transform: rotate(0deg) scale(1, 1);
-              -webkit-transform-origin: center center;
-              -moz-transform-origin: center center;
-              -ms-transform-origin: center center;
-              -o-transform-origin: center center;
-              transform-origin: center center;
-              -webkit-transition: all 0.45s ease-in-out;
-              -moz-transition: all 0.45s ease-in-out;
-              -ms-transition: all 0.45s ease-in-out;
-              -o-transition: all 0.45s ease-in-out;
-              transition: all 0.45s ease-in-out; }
-              /* line 80, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-              header .nav-wrap .nav-bar #nav-icon-wrap .nav-icon-placement #nav-icon span:nth-child(1) {
-                top: 0;
-                opacity: 1; }
-              /* line 85, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-              header .nav-wrap .nav-bar #nav-icon-wrap .nav-icon-placement #nav-icon span:nth-child(2), header .nav-wrap .nav-bar #nav-icon-wrap .nav-icon-placement #nav-icon span:nth-child(3) {
+              height: 100%;
+              opacity: 0;
+              z-index: 998; }
+              /* line 94, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+              .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .header-menu .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper_widget .hs-menu-wrapper ul {
+                position: relative;
+                top: -300px;
+                margin: 0 auto;
+                padding: 0 5%;
+                text-align: center;
+                -webkit-transition: all 0.45s ease-in-out;
+                -moz-transition: all 0.45s ease-in-out;
+                -ms-transition: all 0.45s ease-in-out;
+                -o-transition: all 0.45s ease-in-out;
+                transition: all 0.45s ease-in-out; }
+                /* line 103, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+                .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .header-menu .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper_widget .hs-menu-wrapper ul li {
+                  margin: 15px 0 0;
+                  padding: 0 0 15px;
+                  width: 100%;
+                  list-style: none;
+                  border-bottom: rgba(255, 255, 255, 0.5) 1px solid;
+                  opacity: 0;
+                  -webkit-transition: all 0.45s ease-in-out;
+                  -moz-transition: all 0.45s ease-in-out;
+                  -ms-transition: all 0.45s ease-in-out;
+                  -o-transition: all 0.45s ease-in-out;
+                  transition: all 0.45s ease-in-out; }
+                  /* line 114, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+                  .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .header-menu .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper_widget .hs-menu-wrapper ul li a:link, .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .header-menu .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper_widget .hs-menu-wrapper ul li a:visited, .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .header-menu .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper_widget .hs-menu-wrapper ul li a:hover, .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .header-menu .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper_widget .hs-menu-wrapper ul li a:active {
+                    width: 100%;
+                    color: #fff;
+                    font-size: 1.5rem;
+                    letter-spacing: 3px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    font-family: 'Proxima Nova Light', Helvetica, Arial, sans-serif; }
+                  /* line 123, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+                  .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .header-menu .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper_widget .hs-menu-wrapper ul li a:hover {
+                    color: #059e9a; }
+                  /* line 128, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+                  .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .header-menu .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper_widget .hs-menu-wrapper ul li:first-of-type {
+                    margin: 0; }
+                  /* line 132, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+                  .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .header-menu .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper_widget .hs-menu-wrapper ul li:nth-last-of-type(2) {
+                    padding: 0; }
+                  /* line 136, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+                  .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .header-menu .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper_widget .hs-menu-wrapper ul li:nth-last-of-type(2), .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .header-menu .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper_widget .hs-menu-wrapper ul li.navContactItem.btn {
+                    border-bottom: none; }
+                  /* line 141, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+                  .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .header-menu .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper_widget .hs-menu-wrapper ul li.navContactItem.btn {
+                    margin: 30px auto 0; }
+              /* line 147, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+              .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .header-menu .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper_widget .hs-menu-wrapper.open {
+                opacity: 1;
+                -webkit-transform: translateY(0);
+                -moz-transform: translateY(0);
+                -ms-transform: translateY(0);
+                -o-transform: translateY(0);
+                transform: translateY(0); }
+                /* line 152, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+                .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .header-menu .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper_widget .hs-menu-wrapper.open ul {
+                  top: 40px; }
+                  /* line 155, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+                  .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .header-menu .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper_widget .hs-menu-wrapper.open ul li {
+                    opacity: 1; }
+        /* line 165, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+        .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .nav-extras {
+          width: 100%; }
+          /* line 168, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+          .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .nav-extras .cell-wrapper {
+            width: 100%; }
+            /* line 171, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+            .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .nav-extras .cell-wrapper .hs_cos_wrapper_type_custom_widget {
+              width: 100%; }
+              /* line 174, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+              .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .nav-extras .cell-wrapper .hs_cos_wrapper_type_custom_widget #nav-icon-wrap {
+                position: absolute;
                 top: 50%;
+                right: 5%;
+                width: 110px;
+                height: 25px;
+                opacity: 1;
+                cursor: pointer;
+                z-index: 1000;
                 -webkit-transform: translateY(-50%);
                 -moz-transform: translateY(-50%);
                 -ms-transform: translateY(-50%);
                 -o-transform: translateY(-50%);
-                transform: translateY(-50%); }
-              /* line 92, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-              header .nav-wrap .nav-bar #nav-icon-wrap .nav-icon-placement #nav-icon span:nth-child(4) {
-                top: 100%;
-                opacity: 1;
-                -webkit-transform: translateY(-100%);
-                -moz-transform: translateY(-100%);
-                -ms-transform: translateY(-100%);
-                -o-transform: translateY(-100%);
-                transform: translateY(-100%); }
-        /* line 106, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-        header .nav-wrap .nav-bar #nav-icon-wrap.open .nav-icon-placement #nav-icon span:nth-child(1) {
-          opacity: 0;
-          -webkit-transform: scale(0, 1);
-          -moz-transform: scale(0, 1);
-          -ms-transform: scale(0, 1);
-          -o-transform: scale(0, 1);
-          transform: scale(0, 1); }
-        /* line 111, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-        header .nav-wrap .nav-bar #nav-icon-wrap.open .nav-icon-placement #nav-icon span:nth-child(2) {
-          -webkit-transform: rotate(45deg);
-          -moz-transform: rotate(45deg);
-          -ms-transform: rotate(45deg);
-          -o-transform: rotate(45deg);
-          transform: rotate(45deg); }
-        /* line 115, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-        header .nav-wrap .nav-bar #nav-icon-wrap.open .nav-icon-placement #nav-icon span:nth-child(3) {
-          -webkit-transform: rotate(-45deg);
-          -moz-transform: rotate(-45deg);
-          -ms-transform: rotate(-45deg);
-          -o-transform: rotate(-45deg);
-          transform: rotate(-45deg); }
-        /* line 119, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-        header .nav-wrap .nav-bar #nav-icon-wrap.open .nav-icon-placement #nav-icon span:nth-child(4) {
-          opacity: 0;
-          -webkit-transform: scale(0, 1);
-          -moz-transform: scale(0, 1);
-          -ms-transform: scale(0, 1);
-          -o-transform: scale(0, 1);
-          transform: scale(0, 1); }
-      /* line 129, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-      header .nav-wrap .nav-bar .nav-angle {
-        position: absolute;
-        float: none;
-        display: block;
-        top: 0;
-        right: -10px;
-        bottom: auto;
-        left: auto;
-        width: 205px;
-        height: 0;
-        background: url("../images/nav-angle-teal.svg") no-repeat center center;
-        opacity: 0;
-        z-index: 1;
-        -webkit-transition: all 0.45s ease-in-out;
-        -moz-transition: all 0.45s ease-in-out;
-        -ms-transition: all 0.45s ease-in-out;
-        -o-transition: all 0.45s ease-in-out;
-        transition: all 0.45s ease-in-out; }
-    /* line 141, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-    header .nav-wrap nav {
-      position: absolute;
-      float: none;
-      display: block;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 0;
-      z-index: 998;
-      -webkit-transform: translateY(-100%);
-      -moz-transform: translateY(-100%);
-      -ms-transform: translateY(-100%);
-      -o-transform: translateY(-100%);
-      transform: translateY(-100%);
-      -webkit-transition: all 0.45s ease-in-out;
-      -moz-transition: all 0.45s ease-in-out;
-      -ms-transition: all 0.45s ease-in-out;
-      -o-transition: all 0.45s ease-in-out;
-      transition: all 0.45s ease-in-out; }
-      /* line 152, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-      header .nav-wrap nav ul {
-        position: relative;
-        top: 80px;
-        right: auto;
-        bottom: auto;
-        left: auto;
-        margin: 0 auto;
-        padding: 0 5%;
-        text-align: center;
-        -webkit-transition: all 0.45s ease-in-out;
-        -moz-transition: all 0.45s ease-in-out;
-        -ms-transition: all 0.45s ease-in-out;
-        -o-transition: all 0.45s ease-in-out;
-        transition: all 0.45s ease-in-out; }
-        /* line 160, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-        header .nav-wrap nav ul li {
-          margin: 15px 0 0;
-          padding: 0 0 15px;
-          width: 100%;
-          height: auto;
-          list-style: none;
-          border-bottom: rgba(255, 255, 255, 0.5) 1px solid;
-          opacity: 0;
-          -webkit-transition: all 0.45s ease-in-out;
-          -moz-transition: all 0.45s ease-in-out;
-          -ms-transition: all 0.45s ease-in-out;
-          -o-transition: all 0.45s ease-in-out;
-          transition: all 0.45s ease-in-out; }
-          /* line 170, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-          header .nav-wrap nav ul li a:link, header .nav-wrap nav ul li a:visited, header .nav-wrap nav ul li a:hover, header .nav-wrap nav ul li a:active {
-            width: 100%;
-            height: auto;
-            color: #ffffff;
-            font-size: 1.5rem;
-            letter-spacing: 3px;
-            text-align: center;
-            text-transform: uppercase; }
-            /* line 17, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/_mixins.scss */
-            header .nav-wrap nav ul li a:link else, header .nav-wrap nav ul li a:visited else, header .nav-wrap nav ul li a:hover else, header .nav-wrap nav ul li a:active else {
-              font-family: 'Proxima Nova Light', Helvetica, Arial, sans-serif; }
-          /* line 179, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-          header .nav-wrap nav ul li a:hover {
-            color: #059e9a; }
-          /* line 184, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-          header .nav-wrap nav ul li:first-of-type {
-            margin: 0; }
-          /* line 188, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-          header .nav-wrap nav ul li:nth-last-of-type(2) {
-            padding: 0; }
-          /* line 192, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-          header .nav-wrap nav ul li:nth-last-of-type(2), header .nav-wrap nav ul li#contact.btn {
-            border-bottom: none; }
-          /* line 197, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-          header .nav-wrap nav ul li#contact.btn {
-            margin: 30px auto 0; }
-      /* line 203, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-      header .nav-wrap nav.open {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        -moz-transform: translateY(0);
-        -ms-transform: translateY(0);
-        -o-transform: translateY(0);
-        transform: translateY(0); }
-        /* line 209, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-        header .nav-wrap nav.open ul li {
-          opacity: 1; }
-  /* line 217, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-  header .nav-right-color {
-    position: absolute;
-    float: none;
-    display: block;
-    top: 0;
-    right: 0;
-    bottom: auto;
-    left: auto;
-    width: calc(50% - 470px);
-    height: 100px;
-    background: #059e9a;
-    opacity: 0;
-    z-index: 1;
-    -webkit-transition: height 0.45s ease-in-out;
-    -moz-transition: height 0.45s ease-in-out;
-    -ms-transition: height 0.45s ease-in-out;
-    -o-transition: height 0.45s ease-in-out;
-    transition: height 0.45s ease-in-out; }
-  /* line 228, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-  header.open {
-    height: 100%; }
-    /* line 231, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-    header.open .nav-wrap {
+                transform: translateY(-50%);
+                -webkit-transition: all 0.25s ease-in-out;
+                -moz-transition: all 0.25s ease-in-out;
+                -ms-transition: all 0.25s ease-in-out;
+                -o-transition: all 0.25s ease-in-out;
+                transition: all 0.25s ease-in-out; }
+                /* line 188, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+                .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .nav-extras .cell-wrapper .hs_cos_wrapper_type_custom_widget #nav-icon-wrap .nav-icon-placement {
+                  position: absolute;
+                  top: 50%;
+                  right: 0;
+                  -webkit-transform: translateY(-50%);
+                  -moz-transform: translateY(-50%);
+                  -ms-transform: translateY(-50%);
+                  -o-transform: translateY(-50%);
+                  transform: translateY(-50%); }
+                  /* line 195, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+                  .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .nav-extras .cell-wrapper .hs_cos_wrapper_type_custom_widget #nav-icon-wrap .nav-icon-placement #nav-icon {
+                    position: relative;
+                    width: 40px;
+                    height: 20px; }
+                    /* line 200, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+                    .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .nav-extras .cell-wrapper .hs_cos_wrapper_type_custom_widget #nav-icon-wrap .nav-icon-placement #nav-icon span {
+                      position: absolute;
+                      display: block;
+                      width: 100%;
+                      height: 2px;
+                      background-color: #059e9a;
+                      border-radius: 9px;
+                      opacity: 1;
+                      -webkit-transform: rotate(0deg) scale(1, 1);
+                      -moz-transform: rotate(0deg) scale(1, 1);
+                      -ms-transform: rotate(0deg) scale(1, 1);
+                      -o-transform: rotate(0deg) scale(1, 1);
+                      transform: rotate(0deg) scale(1, 1);
+                      -webkit-transform-origin: center center;
+                      -moz-transform-origin: center center;
+                      -ms-transform-origin: center center;
+                      -o-transform-origin: center center;
+                      transform-origin: center center;
+                      -webkit-transition: all 0.45s ease-in-out;
+                      -moz-transition: all 0.45s ease-in-out;
+                      -ms-transition: all 0.45s ease-in-out;
+                      -o-transition: all 0.45s ease-in-out;
+                      transition: all 0.45s ease-in-out; }
+                      /* line 215, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+                      .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .nav-extras .cell-wrapper .hs_cos_wrapper_type_custom_widget #nav-icon-wrap .nav-icon-placement #nav-icon span:nth-child(1) {
+                        top: 0;
+                        opacity: 1; }
+                      /* line 220, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+                      .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .nav-extras .cell-wrapper .hs_cos_wrapper_type_custom_widget #nav-icon-wrap .nav-icon-placement #nav-icon span:nth-child(2), .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .nav-extras .cell-wrapper .hs_cos_wrapper_type_custom_widget #nav-icon-wrap .nav-icon-placement #nav-icon span:nth-child(3) {
+                        top: 50%;
+                        -webkit-transform: translateY(-50%);
+                        -moz-transform: translateY(-50%);
+                        -ms-transform: translateY(-50%);
+                        -o-transform: translateY(-50%);
+                        transform: translateY(-50%); }
+                      /* line 227, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+                      .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .nav-extras .cell-wrapper .hs_cos_wrapper_type_custom_widget #nav-icon-wrap .nav-icon-placement #nav-icon span:nth-child(4) {
+                        top: 100%;
+                        opacity: 1;
+                        -webkit-transform: translateY(-100%);
+                        -moz-transform: translateY(-100%);
+                        -ms-transform: translateY(-100%);
+                        -o-transform: translateY(-100%);
+                        transform: translateY(-100%); }
+                /* line 241, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+                .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .nav-extras .cell-wrapper .hs_cos_wrapper_type_custom_widget #nav-icon-wrap.open .nav-icon-placement #nav-icon span:nth-child(1) {
+                  opacity: 0;
+                  -webkit-transform: scale(0, 1);
+                  -moz-transform: scale(0, 1);
+                  -ms-transform: scale(0, 1);
+                  -o-transform: scale(0, 1);
+                  transform: scale(0, 1); }
+                /* line 246, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+                .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .nav-extras .cell-wrapper .hs_cos_wrapper_type_custom_widget #nav-icon-wrap.open .nav-icon-placement #nav-icon span:nth-child(2) {
+                  -webkit-transform: rotate(45deg);
+                  -moz-transform: rotate(45deg);
+                  -ms-transform: rotate(45deg);
+                  -o-transform: rotate(45deg);
+                  transform: rotate(45deg); }
+                /* line 250, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+                .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .nav-extras .cell-wrapper .hs_cos_wrapper_type_custom_widget #nav-icon-wrap.open .nav-icon-placement #nav-icon span:nth-child(3) {
+                  -webkit-transform: rotate(-45deg);
+                  -moz-transform: rotate(-45deg);
+                  -ms-transform: rotate(-45deg);
+                  -o-transform: rotate(-45deg);
+                  transform: rotate(-45deg); }
+                /* line 254, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+                .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .nav-extras .cell-wrapper .hs_cos_wrapper_type_custom_widget #nav-icon-wrap.open .nav-icon-placement #nav-icon span:nth-child(4) {
+                  opacity: 0;
+                  -webkit-transform: scale(0, 1);
+                  -moz-transform: scale(0, 1);
+                  -ms-transform: scale(0, 1);
+                  -o-transform: scale(0, 1);
+                  transform: scale(0, 1); }
+              /* line 264, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+              .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .nav-extras .cell-wrapper .hs_cos_wrapper_type_custom_widget .nav-angle {
+                display: block;
+                position: absolute;
+                top: 0;
+                right: -25px;
+                width: 205px;
+                height: 0;
+                background: url("/hubfs/icons-products/nav-angle-teal.svg") no-repeat center center;
+                opacity: 0;
+                z-index: 1; }
+              /* line 276, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+              .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .nav-extras .cell-wrapper .hs_cos_wrapper_type_custom_widget .nav-right-color {
+                display: block;
+                position: absolute;
+                top: 2px;
+                left: 100%;
+                width: calc(50vw - 470px);
+                height: 60px;
+                background: #059e9a;
+                opacity: 0;
+                z-index: 1;
+                -webkit-transition: height 0.45s ease-in-out;
+                -moz-transition: height 0.45s ease-in-out;
+                -ms-transition: height 0.45s ease-in-out;
+                -o-transition: height 0.45s ease-in-out;
+                transition: height 0.45s ease-in-out; }
+  /* line 296, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+  .header-container-wrapper.open {
+    height: 100%;
+    background: rgba(38, 38, 38, 0.95); }
+    /* line 300, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+    .header-container-wrapper.open .nav-wrap {
       height: 100%; }
-  /* line 242, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-  header.helios .nav-wrap .nav-bar #nav-icon-wrap .nav-icon-placement #nav-icon span {
-    background-color: #025d96; }
-  /* line 249, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-  header.helios .nav-wrap .nav-bar .nav-angle {
-    background: url("../images/nav-angle-blue.svg") no-repeat center center; }
-  /* line 255, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-  header.helios .nav-right-color {
-    background: #025d96; }
-  /* line 266, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-  header.widenet .nav-wrap .nav-bar #nav-icon-wrap .nav-icon-placement #nav-icon span {
-    background-color: #059e9a; }
-  /* line 273, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-  header.widenet .nav-wrap .nav-bar .nav-angle {
-    background: url("../images/nav-angle-teal.svg") no-repeat center center; }
-  /* line 279, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-  header.widenet .nav-right-color {
-    background: #059e9a; }
-  /* line 290, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-  header.nexus .nav-wrap .nav-bar #nav-icon-wrap .nav-icon-placement #nav-icon span {
-    background-color: #39b54a; }
-  /* line 297, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-  header.nexus .nav-wrap .nav-bar .nav-angle {
-    background: url("../images/nav-angle-green.svg") no-repeat center center; }
-  /* line 303, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-  header.nexus .nav-right-color {
-    background: #39b54a; }
-  /* line 314, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-  header.hydra .nav-wrap .nav-bar #nav-icon-wrap .nav-icon-placement #nav-icon span {
-    background-color: #fa7930; }
-  /* line 321, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-  header.hydra .nav-wrap .nav-bar .nav-angle {
-    background: url("../images/nav-angle-orange.svg") no-repeat center center; }
-  /* line 327, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-  header.hydra .nav-right-color {
-    background: #fa7930; }
-  /* line 338, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-  header.insight .nav-wrap .nav-bar #nav-icon-wrap .nav-icon-placement #nav-icon span {
-    background-color: #ffc125; }
-  /* line 345, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-  header.insight .nav-wrap .nav-bar .nav-angle {
-    background: url("../images/nav-angle-yellow.svg") no-repeat center center; }
-  /* line 351, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-  header.insight .nav-right-color {
-    background: #ffc125; }
-  /* line 362, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-  header.target .nav-wrap .nav-bar #nav-icon-wrap .nav-icon-placement #nav-icon span {
-    background-color: #ee4235; }
-  /* line 369, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-  header.target .nav-wrap .nav-bar .nav-angle {
-    background: url("../images/nav-angle-red.svg") no-repeat center center; }
-  /* line 375, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-  header.target .nav-right-color {
-    background: #ee4235; }
-  /* line 386, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-  header.moneydesktop .nav-wrap .nav-bar #nav-icon-wrap .nav-icon-placement #nav-icon span {
-    background-color: #8dc63f; }
-  /* line 393, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-  header.moneydesktop .nav-wrap .nav-bar .nav-angle {
-    background: url("../images/nav-angle-mdgreen.svg") no-repeat center center; }
-  /* line 399, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-  header.moneydesktop .nav-right-color {
-    background: #8dc63f; }
 
 @media screen and (min-width: 569px) {
-  /* line 409, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-  header {
-    width: 100%;
-    height: 100px; }
-    /* line 412, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-    header .nav-wrap .nav-bar {
-      width: 100%;
-      height: 100px; }
-      /* line 416, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-      header .nav-wrap .nav-bar .nav-logo .logo {
-        width: 80px;
-        height: 36px; }
-      /* line 421, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-      header .nav-wrap .nav-bar .nav-angle {
-        height: 100px; }
-    /* line 427, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-    header .nav-wrap nav ul {
-      top: 125px;
-      right: auto;
-      bottom: auto;
-      left: auto; } }
-@media screen and (min-width: 960px) {
-  /* line 439, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-  header {
+  /* line 319, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+  .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .header-menu .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper_widget .hs-menu-wrapper.open ul {
+    top: 60px; } }
+@media screen and (min-width: 1080px) {
+  /* line 337, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+  .header-container-wrapper {
     -webkit-transition: height 0s ease-in-out;
     -moz-transition: height 0s ease-in-out;
     -ms-transition: height 0s ease-in-out;
     -o-transition: height 0s ease-in-out;
     transition: height 0s ease-in-out; }
-    /* line 441, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-    header .nav-wrap {
-      position: relative;
+    /* line 344, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+    .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .header-menu .cell-wrapper.layout-widget-wrapper {
       margin: 0 auto;
-      padding: 0;
-      width: 960px; }
-      /* line 446, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-      header .nav-wrap .nav-bar {
-        position: relative;
-        top: auto;
-        right: auto;
-        bottom: auto;
-        left: auto;
-        margin: 0 auto;
-        padding: 0 50px 0 40px;
-        width: 960px; }
-        /* line 452, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-        header .nav-wrap .nav-bar #nav-icon-wrap {
-          opacity: 0;
-          z-index: 1; }
-        /* line 457, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-        header .nav-wrap .nav-bar .nav-angle {
-          opacity: 1;
-          z-index: 999; }
-      /* line 463, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-      header .nav-wrap nav {
-        top: 12.5%;
+      padding: 0; }
+      /* line 349, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+      .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .header-menu .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper_widget .hs-menu-wrapper {
+        top: -60px;
         right: 0;
         bottom: auto;
         left: auto;
+        margin: 0;
         width: 100%;
-        height: 100px;
+        height: 60px;
         opacity: 1;
         z-index: 1000; }
-        /* line 469, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-        header .nav-wrap nav ul {
+        /* line 360, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+        .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .header-menu .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper_widget .hs-menu-wrapper ul {
           position: absolute;
+          top: calc(50% + 2px);
           right: 0;
-          margin: 0; }
-          /* line 474, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-          header .nav-wrap nav ul li {
+          margin: 0;
+          line-height: 0;
+          -webkit-transform: translateY(-50%);
+          -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -o-transform: translateY(-50%);
+          transform: translateY(-50%); }
+          /* line 369, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+          .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .header-menu .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper_widget .hs-menu-wrapper ul li {
             display: inline-block;
             margin: 0 40px 0 0;
             padding: 0;
             width: auto;
             border-bottom: none;
             opacity: 1; }
-            /* line 482, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-            header .nav-wrap nav ul li a:link, header .nav-wrap nav ul li a:visited, header .nav-wrap nav ul li a:hover, header .nav-wrap nav ul li a:active {
+            /* line 378, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+            .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .header-menu .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper_widget .hs-menu-wrapper ul li a:link, .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .header-menu .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper_widget .hs-menu-wrapper ul li a:visited, .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .header-menu .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper_widget .hs-menu-wrapper ul li a:hover, .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .header-menu .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper_widget .hs-menu-wrapper ul li a:active {
               width: auto;
-              font-size: 0.75rem;
+              font-size: 0.75rem !important;
               letter-spacing: 1.5px;
               text-align: center;
               text-transform: uppercase;
               font-family: 'Proxima Nova', Helvetica, Arial, sans-serif; }
-              /* line 17, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/_mixins.scss */
-              header .nav-wrap nav ul li a:link else, header .nav-wrap nav ul li a:visited else, header .nav-wrap nav ul li a:hover else, header .nav-wrap nav ul li a:active else {
-                font-family: 'Proxima Nova Light', Helvetica, Arial, sans-serif; }
-            /* line 491, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-            header .nav-wrap nav ul li:first-of-type {
+            /* line 387, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+            .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .header-menu .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper_widget .hs-menu-wrapper ul li:first-of-type {
               margin-right: 40px; }
-            /* line 495, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-            header .nav-wrap nav ul li#contact.btn {
+            /* line 391, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+            .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .header-menu .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper_widget .hs-menu-wrapper ul li.navContactItem.btn {
               margin: 0 0 0 10px;
               padding: 0;
               width: auto;
               background: none !important; }
-              /* line 500, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-              header .nav-wrap nav ul li#contact.btn:active {
+              /* line 397, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+              .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .header-menu .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper_widget .hs-menu-wrapper ul li.navContactItem.btn:active {
                 -webkit-transform: translateY(0);
                 -moz-transform: translateY(0);
                 -ms-transform: translateY(0);
                 -o-transform: translateY(0);
                 transform: translateY(0); }
-    /* line 509, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_header.scss */
-    header .nav-right-color {
+    /* line 411, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+    .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .nav-extras .cell-wrapper .hs_cos_wrapper_type_custom_widget #nav-icon-wrap {
+      opacity: 0 !important;
+      z-index: 1; }
+    /* line 416, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+    .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .nav-extras .cell-wrapper .hs_cos_wrapper_type_custom_widget .nav-angle {
+      top: 2px;
+      height: 60px;
+      opacity: 1;
+      z-index: 999; }
+    /* line 423, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_header.scss */
+    .header-container-wrapper .header-container .row-fluid-wrapper .row-fluid .nav-extras .cell-wrapper .hs_cos_wrapper_type_custom_widget .nav-right-color {
       opacity: 1; } }
-/* line 4, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_footer.scss */
-footer {
+/* line 4, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_body.scss */
+.body-container-wrapper {
   position: relative;
-  padding-bottom: 60px;
-  height: auto;
-  background-color: #262626;
-  border: none;
-  color: #ffffff;
-  font-size: 1em;
-  letter-spacing: 1px;
-  text-align: center;
-  text-transform: uppercase; }
-  /* line 17, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/_mixins.scss */
-  footer else {
-    font-family: 'Proxima Nova Light', Helvetica, Arial, sans-serif; }
-  /* line 11, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_footer.scss */
-  footer:before {
+  padding-top: 0;
+  margin-bottom: 0; }
+  /* line 9, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_body.scss */
+  .body-container-wrapper .body-container.container-fluid {
+    position: relative; }
+
+/* line 5, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-main.scss */
+.homepager .body-container-wrapper {
+  position: relative;
+  height: 100%; }
+  /* line 9, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-main.scss */
+  .homepager .body-container-wrapper .body-container.container-fluid {
+    position: relative;
+    height: 100%; }
+    /* line 13, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-main.scss */
+    .homepager .body-container-wrapper .body-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 {
+      position: relative;
+      margin-bottom: 100px;
+      height: 100%;
+      min-height: 568px; }
+      /* line 19, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-main.scss */
+      .homepager .body-container-wrapper .body-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 > .row-fluid {
+        position: relative;
+        height: 100%; }
+        /* line 23, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-main.scss */
+        .homepager .body-container-wrapper .body-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 > .row-fluid .span12.widget-span.widget-type-custom_widget {
+          position: relative;
+          height: 100%; }
+          /* line 27, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-main.scss */
+          .homepager .body-container-wrapper .body-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 > .row-fluid .span12.widget-span.widget-type-custom_widget .cell-wrapper.layout-widget-wrapper {
+            position: relative;
+            height: 100%; }
+            /* line 31, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-main.scss */
+            .homepager .body-container-wrapper .body-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 > .row-fluid .span12.widget-span.widget-type-custom_widget .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper.hs_cos_wrapper_widget.hs_cos_wrapper_type_custom_widget {
+              position: relative;
+              height: 100%; }
+              /* line 35, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-main.scss */
+              .homepager .body-container-wrapper .body-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 > .row-fluid .span12.widget-span.widget-type-custom_widget .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper.hs_cos_wrapper_widget.hs_cos_wrapper_type_custom_widget .band.hero-main {
+                position: relative;
+                padding: 0;
+                height: 100%;
+                text-align: left; }
+                /* line 42, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-main.scss */
+                .homepager .body-container-wrapper .body-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 > .row-fluid .span12.widget-span.widget-type-custom_widget .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper.hs_cos_wrapper_widget.hs_cos_wrapper_type_custom_widget .band.hero-main:before {
+                  content: ' ';
+                  display: block;
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  width: 100%;
+                  height: 100%;
+                  background-repeat: no-repeat;
+                  background-position: center center;
+                  background-size: cover;
+                  z-index: 0; }
+                /* line 56, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-main.scss */
+                .homepager .body-container-wrapper .body-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 > .row-fluid .span12.widget-span.widget-type-custom_widget .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper.hs_cos_wrapper_widget.hs_cos_wrapper_type_custom_widget .band.hero-main .overlay {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%; }
+                /* line 64, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-main.scss */
+                .homepager .body-container-wrapper .body-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 > .row-fluid .span12.widget-span.widget-type-custom_widget .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper.hs_cos_wrapper_widget.hs_cos_wrapper_type_custom_widget .band.hero-main .wrap {
+                  position: relative;
+                  padding: 0;
+                  height: 100%;
+                  max-width: none;
+                  -webkit-animation: fade-in 2s 1, enter-top 1s 1;
+                  -moz-animation: fade-in 2s 1, enter-top 1s 1;
+                  -o-animation: fade-in 2s 1, enter-top 1s 1;
+                  animation: fade-in 2s 1, enter-top 1s 1; }
+                  /* line 72, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-main.scss */
+                  .homepager .body-container-wrapper .body-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 > .row-fluid .span12.widget-span.widget-type-custom_widget .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper.hs_cos_wrapper_widget.hs_cos_wrapper_type_custom_widget .band.hero-main .wrap .hm-content {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    margin: 30px auto 0;
+                    padding: 0 5%;
+                    width: 100%;
+                    max-width: 960px;
+                    -webkit-transform: translateY(-50%) translateX(-50%);
+                    -moz-transform: translateY(-50%) translateX(-50%);
+                    -ms-transform: translateY(-50%) translateX(-50%);
+                    -o-transform: translateY(-50%) translateX(-50%);
+                    transform: translateY(-50%) translateX(-50%); }
+                    /* line 83, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-main.scss */
+                    .homepager .body-container-wrapper .body-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 > .row-fluid .span12.widget-span.widget-type-custom_widget .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper.hs_cos_wrapper_widget.hs_cos_wrapper_type_custom_widget .band.hero-main .wrap .hm-content h1.main-hdr {
+                      font-size: 1rem;
+                      letter-spacing: 0.3em;
+                      text-align: center;
+                      text-transform: uppercase;
+                      font-family: 'Proxima Nova Light', Helvetica, Arial, sans-serif;
+                      line-height: 28px;
+                      white-space: nowrap; }
+                      /* line 88, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-main.scss */
+                      .homepager .body-container-wrapper .body-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 > .row-fluid .span12.widget-span.widget-type-custom_widget .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper.hs_cos_wrapper_widget.hs_cos_wrapper_type_custom_widget .band.hero-main .wrap .hm-content h1.main-hdr span {
+                        font-size: 1.3125rem;
+                        letter-spacing: 0.2em;
+                        text-align: center;
+                        text-transform: uppercase;
+                        font-family: 'Proxima Nova Bold', Helvetica, Arial, sans-serif; }
+                    /* line 93, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-main.scss */
+                    .homepager .body-container-wrapper .body-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 > .row-fluid .span12.widget-span.widget-type-custom_widget .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper.hs_cos_wrapper_widget.hs_cos_wrapper_type_custom_widget .band.hero-main .wrap .hm-content .lone-image {
+                      display: block;
+                      position: relative;
+                      margin: 20px auto;
+                      width: 100%;
+                      max-width: 450px; }
+                    /* line 102, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-main.scss */
+                    .homepager .body-container-wrapper .body-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 > .row-fluid .span12.widget-span.widget-type-custom_widget .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper.hs_cos_wrapper_widget.hs_cos_wrapper_type_custom_widget .band.hero-main .wrap .hm-content .subcontent .sub-hdr {
+                      display: none;
+                      margin: 0;
+                      padding: 6px 0; }
+                      /* line 107, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-main.scss */
+                      .homepager .body-container-wrapper .body-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 > .row-fluid .span12.widget-span.widget-type-custom_widget .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper.hs_cos_wrapper_widget.hs_cos_wrapper_type_custom_widget .band.hero-main .wrap .hm-content .subcontent .sub-hdr p {
+                        margin: 0;
+                        font-size: 1.125rem;
+                        letter-spacing: initial;
+                        text-align: center;
+                        text-transform: none;
+                        font-family: 'Proxima Nova Light', Helvetica, Arial, sans-serif;
+                        line-height: 25px; }
+                /* line 117, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-main.scss */
+                .homepager .body-container-wrapper .body-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 > .row-fluid .span12.widget-span.widget-type-custom_widget .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper.hs_cos_wrapper_widget.hs_cos_wrapper_type_custom_widget .band.hero-main .herrow {
+                  position: absolute;
+                  bottom: 0;
+                  width: 100%;
+                  height: 45px; }
+                  /* line 123, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-main.scss */
+                  .homepager .body-container-wrapper .body-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 > .row-fluid .span12.widget-span.widget-type-custom_widget .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper.hs_cos_wrapper_widget.hs_cos_wrapper_type_custom_widget .band.hero-main .herrow .top-arrow {
+                    display: inline-block;
+                    position: relative;
+                    width: 100%; }
+                    /* line 128, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-main.scss */
+                    .homepager .body-container-wrapper .body-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 > .row-fluid .span12.widget-span.widget-type-custom_widget .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper.hs_cos_wrapper_widget.hs_cos_wrapper_type_custom_widget .band.hero-main .herrow .top-arrow a {
+                      position: absolute;
+                      bottom: 0;
+                      left: 50%;
+                      width: 30px;
+                      height: 16px;
+                      -webkit-transform: translateX(-50%);
+                      -moz-transform: translateX(-50%);
+                      -ms-transform: translateX(-50%);
+                      -o-transform: translateX(-50%);
+                      transform: translateX(-50%);
+                      -webkit-transition: bottom 0.2s;
+                      -moz-transition: bottom 0.2s;
+                      -ms-transition: bottom 0.2s;
+                      -o-transition: bottom 0.2s;
+                      transition: bottom 0.2s;
+                      -webkit-animation: fade-in 2s 1, arrow-bounce 2s infinite;
+                      -moz-animation: fade-in 2s 1, arrow-bounce 2s infinite;
+                      -o-animation: fade-in 2s 1, arrow-bounce 2s infinite;
+                      animation: fade-in 2s 1, arrow-bounce 2s infinite; }
+                    /* line 140, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-main.scss */
+                    .homepager .body-container-wrapper .body-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 > .row-fluid .span12.widget-span.widget-type-custom_widget .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper.hs_cos_wrapper_widget.hs_cos_wrapper_type_custom_widget .band.hero-main .herrow .top-arrow .arrow-img {
+                      content: url("/hubfs/icons-products/arrow-go-teal.svg"); }
+                /* line 152, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-main.scss */
+                .homepager .body-container-wrapper .body-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 > .row-fluid .span12.widget-span.widget-type-custom_widget .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper.hs_cos_wrapper_widget.hs_cos_wrapper_type_custom_widget .band.hero-main:after {
+                  content: ' ';
+                  background: url("/hubfs/icons-products/top-diagonal.svg");
+                  position: absolute;
+                  bottom: 0;
+                  width: 100%;
+                  height: 100px;
+                  background-size: contain;
+                  -webkit-transform: translateY(100%);
+                  -moz-transform: translateY(100%);
+                  -ms-transform: translateY(100%);
+                  -o-transform: translateY(100%);
+                  transform: translateY(100%); }
+  /* line 171, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-main.scss */
+  .homepager .body-container-wrapper:after {
+    content: ' ';
+    display: block;
+    clear: both;
+    height: 0; }
+
+@media screen and (min-width: 569px) {
+  /* line 187, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-main.scss */
+  .homepager .body-container-wrapper .body-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 {
+    min-height: 768px; }
+    /* line 197, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-main.scss */
+    .homepager .body-container-wrapper .body-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 > .row-fluid .span12.widget-span.widget-type-custom_widget .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper.hs_cos_wrapper_widget.hs_cos_wrapper_type_custom_widget .band.hero-main .wrap .hm-content h1.main-hdr {
+      font-size: 1.5rem;
+      line-height: 36px; }
+      /* line 201, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-main.scss */
+      .homepager .body-container-wrapper .body-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 > .row-fluid .span12.widget-span.widget-type-custom_widget .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper.hs_cos_wrapper_widget.hs_cos_wrapper_type_custom_widget .band.hero-main .wrap .hm-content h1.main-hdr span {
+        font-size: 1.75rem;
+        letter-spacing: .24em; }
+    /* line 208, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-main.scss */
+    .homepager .body-container-wrapper .body-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 > .row-fluid .span12.widget-span.widget-type-custom_widget .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper.hs_cos_wrapper_widget.hs_cos_wrapper_type_custom_widget .band.hero-main .wrap .hm-content .subcontent .sub-hdr {
+      display: block; }
+    /* line 212, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-main.scss */
+    .homepager .body-container-wrapper .body-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 > .row-fluid .span12.widget-span.widget-type-custom_widget .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper.hs_cos_wrapper_widget.hs_cos_wrapper_type_custom_widget .band.hero-main .wrap .hm-content .subcontent .btn {
+      margin: 28px auto; } }
+@media screen and (min-width: 1080px) {
+  /* line 236, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-main.scss */
+  .homepager .body-container-wrapper .body-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 {
+    height: 100vh; }
+    /* line 244, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-main.scss */
+    .homepager .body-container-wrapper .body-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 > .row-fluid .span12.widget-span.widget-type-custom_widget .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper.hs_cos_wrapper_widget.hs_cos_wrapper_type_custom_widget .band.hero-main:before {
+      -webkit-animation: fade-in 2s 1, enter-right 2s 1;
+      -moz-animation: fade-in 2s 1, enter-right 2s 1;
+      -o-animation: fade-in 2s 1, enter-right 2s 1;
+      animation: fade-in 2s 1, enter-right 2s 1; }
+    /* line 248, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-main.scss */
+    .homepager .body-container-wrapper .body-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 > .row-fluid .span12.widget-span.widget-type-custom_widget .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper.hs_cos_wrapper_widget.hs_cos_wrapper_type_custom_widget .band.hero-main .wrap {
+      -webkit-animation: fade-in 2s 1, enter-top 2s 1;
+      -moz-animation: fade-in 2s 1, enter-top 2s 1;
+      -o-animation: fade-in 2s 1, enter-top 2s 1;
+      animation: fade-in 2s 1, enter-top 2s 1; }
+      /* line 251, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-main.scss */
+      .homepager .body-container-wrapper .body-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 > .row-fluid .span12.widget-span.widget-type-custom_widget .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper.hs_cos_wrapper_widget.hs_cos_wrapper_type_custom_widget .band.hero-main .wrap .hm-content {
+        left: 12.5%;
+        margin: 30px auto 0;
+        padding: 0 120px;
+        -webkit-transform: translateY(-50%) translateX(-18.75%);
+        -moz-transform: translateY(-50%) translateX(-18.75%);
+        -ms-transform: translateY(-50%) translateX(-18.75%);
+        -o-transform: translateY(-50%) translateX(-18.75%);
+        transform: translateY(-50%) translateX(-18.75%); }
+        /* line 258, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-main.scss */
+        .homepager .body-container-wrapper .body-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 > .row-fluid .span12.widget-span.widget-type-custom_widget .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper.hs_cos_wrapper_widget.hs_cos_wrapper_type_custom_widget .band.hero-main .wrap .hm-content h1.main-hdr {
+          text-align: left; }
+          /* line 261, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-main.scss */
+          .homepager .body-container-wrapper .body-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 > .row-fluid .span12.widget-span.widget-type-custom_widget .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper.hs_cos_wrapper_widget.hs_cos_wrapper_type_custom_widget .band.hero-main .wrap .hm-content h1.main-hdr span {
+            font-size: 2.25rem;
+            line-height: 48px; }
+        /* line 267, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-main.scss */
+        .homepager .body-container-wrapper .body-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 > .row-fluid .span12.widget-span.widget-type-custom_widget .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper.hs_cos_wrapper_widget.hs_cos_wrapper_type_custom_widget .band.hero-main .wrap .hm-content .lone-image {
+          display: none; }
+        /* line 272, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-main.scss */
+        .homepager .body-container-wrapper .body-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 > .row-fluid .span12.widget-span.widget-type-custom_widget .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper.hs_cos_wrapper_widget.hs_cos_wrapper_type_custom_widget .band.hero-main .wrap .hm-content .subcontent .sub-hdr {
+          margin: 0;
+          padding: 6px 0; }
+          /* line 276, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-main.scss */
+          .homepager .body-container-wrapper .body-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 > .row-fluid .span12.widget-span.widget-type-custom_widget .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper.hs_cos_wrapper_widget.hs_cos_wrapper_type_custom_widget .band.hero-main .wrap .hm-content .subcontent .sub-hdr p {
+            text-align: left; }
+        /* line 281, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-main.scss */
+        .homepager .body-container-wrapper .body-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 > .row-fluid .span12.widget-span.widget-type-custom_widget .cell-wrapper.layout-widget-wrapper .hs_cos_wrapper.hs_cos_wrapper_widget.hs_cos_wrapper_type_custom_widget .band.hero-main .wrap .hm-content .subcontent .btn {
+          margin: 28px 0; } }
+/* line 4, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-sub.scss */
+.band.hero-sub {
+  position: relative;
+  padding: 140px 0 80px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-transition: all 0.45s ease-in-out;
+  -moz-transition: all 0.45s ease-in-out;
+  -ms-transition: all 0.45s ease-in-out;
+  -o-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out; }
+  /* line 13, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-sub.scss */
+  .band.hero-sub .overlay {
     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; }
+  /* line 22, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-sub.scss */
+  .band.hero-sub .wrap {
+    position: relative;
+    text-align: center; }
+    /* line 26, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-sub.scss */
+    .band.hero-sub .wrap .hero-content {
+      display: inline-block;
+      margin: 0 auto; }
+      /* line 30, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-sub.scss */
+      .band.hero-sub .wrap .hero-content .prod-logo {
+        display: inline-block;
+        width: 75px;
+        vertical-align: middle; }
+        /* line 35, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-sub.scss */
+        .band.hero-sub .wrap .hero-content .prod-logo img {
+          width: 100%; }
+        /* line 39, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-sub.scss */
+        .band.hero-sub .wrap .hero-content .prod-logo.md {
+          width: 180px; }
+      /* line 44, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-sub.scss */
+      .band.hero-sub .wrap .hero-content .prod-title {
+        display: inline-block;
+        vertical-align: middle;
+        text-align: left; }
+        /* line 49, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-sub.scss */
+        .band.hero-sub .wrap .hero-content .prod-title h2 {
+          padding: 0;
+          font-size: 2.625rem;
+          letter-spacing: normal;
+          text-align: left;
+          text-transform: uppercase;
+          font-family: 'Proxima Nova Bold', Helvetica, Arial, sans-serif;
+          font-style: italic;
+          line-height: 20px; }
+        /* line 56, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-sub.scss */
+        .band.hero-sub .wrap .hero-content .prod-title h1 {
+          top: 5px;
+          left: 2px;
+          padding: 0;
+          font-size: 0.625rem;
+          letter-spacing: normal;
+          text-align: left;
+          text-transform: normal;
+          font-family: 'Proxima Nova Bold', Helvetica, Arial, sans-serif;
+          font-style: italic;
+          line-height: 10px; }
+      /* line 66, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-sub.scss */
+      .band.hero-sub .wrap .hero-content h1.non-prod {
+        padding: 0;
+        font-size: 2rem;
+        letter-spacing: 0.15em;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Proxima Nova Bold', Helvetica, Arial, sans-serif;
+        font-weight: bolder;
+        line-height: 42px; }
+      /* line 73, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-sub.scss */
+      .band.hero-sub .wrap .hero-content span.non-prod {
+        margin: auto;
+        font-size: 1rem;
+        letter-spacing: 0.3em;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Proxima Nova', Helvetica, Arial, sans-serif;
+        line-height: 28px; }
+
+@media screen and (min-width: 569px) {
+  /* line 86, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-sub.scss */
+  .band.hero-sub {
+    padding: 180px 0 120px; }
+    /* line 91, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-sub.scss */
+    .band.hero-sub .wrap .hero-content .prod-logo {
+      width: 115px; }
+      /* line 94, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-sub.scss */
+      .band.hero-sub .wrap .hero-content .prod-logo.md {
+        width: 300px; }
+    /* line 100, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-sub.scss */
+    .band.hero-sub .wrap .hero-content .prod-title h2 {
+      left: 5px;
+      font-size: 5.25rem;
+      letter-spacing: normal;
+      text-align: left;
+      text-transform: uppercase;
+      font-family: 'Proxima Nova Bold', Helvetica, Arial, sans-serif;
+      line-height: 48px; }
+    /* line 106, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-sub.scss */
+    .band.hero-sub .wrap .hero-content .prod-title h1 {
+      left: 10px;
+      font-size: 1rem;
+      letter-spacing: normal;
+      text-align: left;
+      text-transform: normal;
+      font-family: 'Proxima Nova Bold', Helvetica, Arial, sans-serif;
+      line-height: 15px; }
+    /* line 113, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-sub.scss */
+    .band.hero-sub .wrap .hero-content h1.non-prod {
+      font-size: 2.625rem;
+      letter-spacing: 0.15em;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: 'Proxima Nova Bold', Helvetica, Arial, sans-serif;
+      line-height: 48px; }
+    /* line 118, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-sub.scss */
+    .band.hero-sub .wrap .hero-content span.non-prod {
+      font-size: 1.5rem;
+      letter-spacing: 0.3em;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: 'Proxima Nova', Helvetica, Arial, sans-serif;
+      line-height: 36px; } }
+@media screen and (min-width: 1080px) {
+  /* line 131, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_hero-sub.scss */
+  .band.hero-sub {
+    padding: 160px 0 100px; } }
+/* line 5, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_sect-intro.scss */
+.band.sect-intro.bgc-master {
+  color: #fff; }
+/* line 10, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_sect-intro.scss */
+.band.sect-intro .wrap .scopy {
+  padding: 16px 0; }
+  /* line 13, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_sect-intro.scss */
+  .band.sect-intro .wrap .scopy p {
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 1rem;
+    letter-spacing: 0.07em;
+    text-align: center;
+    text-transform: none;
+    font-family: 'Proxima Nova', Helvetica, Arial, sans-serif;
+    line-height: 24px;
+    word-spacing: .05em; }
+    /* line 20, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_sect-intro.scss */
+    .band.sect-intro .wrap .scopy p:first-of-type {
+      margin: 0; }
+/* line 26, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_sect-intro.scss */
+.band.sect-intro .wrap .btn {
+  margin: 16px auto; }
+
+/* line 6, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_link-box.scss */
+.band.link-box .wrap .left {
+  display: block;
+  position: relative;
+  float: none;
+  width: 100%; }
+  /* line 12, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_link-box.scss */
+  .band.link-box .wrap .left h3 {
+    margin: 0 0 10px; }
+  /* line 16, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_link-box.scss */
+  .band.link-box .wrap .left .scopy {
+    padding: 25px 0; }
+    /* line 19, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_link-box.scss */
+    .band.link-box .wrap .left .scopy p {
+      margin: 0;
+      padding: 0;
+      font-size: 1.125rem;
+      letter-spacing: 0.05em;
+      text-align: center;
+      text-transform: none;
+      font-family: 'Proxima Nova', Helvetica, Arial, sans-serif;
+      line-height: 24px; }
+/* line 28, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_link-box.scss */
+.band.link-box .wrap .right {
+  display: block;
+  position: relative;
+  float: none;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #fff; }
+  /* line 37, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_link-box.scss */
+  .band.link-box .wrap .right ul {
+    display: inline-block;
+    padding: 0;
+    width: auto;
+    list-style: none;
+    overflow: auto; }
+    /* line 44, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_link-box.scss */
+    .band.link-box .wrap .right ul li {
+      float: left;
+      clear: both;
+      padding: 20px 0;
+      white-space: nowrap; }
+      /* line 51, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_link-box.scss */
+      .band.link-box .wrap .right ul li a .icon {
+        display: inline-block;
+        width: 40px;
+        font-size: 0;
+        vertical-align: middle; }
+        /* line 58, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_link-box.scss */
+        .band.link-box .wrap .right ul li a .icon.person .lb-img {
+          content: url("/hubfs/icons-products/adoption-silver.svg"); }
+        /* line 62, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_link-box.scss */
+        .band.link-box .wrap .right ul li a .icon.person::after {
+          content: url("/hubfs/icons-products/adoption-teal.svg"); }
+        /* line 68, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_link-box.scss */
+        .band.link-box .wrap .right ul li a .icon.dollar .lb-img {
+          content: url("/hubfs/icons-products/roi-outlines-silver.svg"); }
+        /* line 72, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_link-box.scss */
+        .band.link-box .wrap .right ul li a .icon.dollar::after {
+          content: url("/hubfs/icons-products/roi-outlines-teal.svg"); }
+        /* line 78, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_link-box.scss */
+        .band.link-box .wrap .right ul li a .icon.network .lb-img {
+          content: url("/hubfs/icons-products/next-silver.svg"); }
+        /* line 82, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_link-box.scss */
+        .band.link-box .wrap .right ul li a .icon.network::after {
+          content: url("/hubfs/icons-products/next-teal.svg"); }
+        /* line 88, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_link-box.scss */
+        .band.link-box .wrap .right ul li a .icon.lock .lb-img {
+          content: url("/hubfs/icons-products/security-silver.svg"); }
+        /* line 92, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_link-box.scss */
+        .band.link-box .wrap .right ul li a .icon.lock::after {
+          content: url("/hubfs/icons-products/security-teal.svg"); }
+        /* line 97, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_link-box.scss */
+        .band.link-box .wrap .right ul li a .icon::after {
+          display: none; }
+      /* line 102, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_link-box.scss */
+      .band.link-box .wrap .right ul li a span {
+        display: inline-block;
+        padding: 0 0 0 22px;
+        color: #c9c9c9;
+        font-size: 1.25rem;
+        letter-spacing: 0.275em;
+        text-align: left;
+        text-transform: uppercase;
+        font-family: 'Proxima Nova', Helvetica, Arial, sans-serif;
+        line-height: 40px;
+        vertical-align: middle; }
+      /* line 113, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_link-box.scss */
+      .band.link-box .wrap .right ul li a:hover .icon .lb-img {
+        display: none; }
+      /* line 117, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_link-box.scss */
+      .band.link-box .wrap .right ul li a:hover .icon::after {
+        display: inline-block; }
+      /* line 122, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_link-box.scss */
+      .band.link-box .wrap .right ul li a:hover span {
+        color: #059e9a; }
+
+@media screen and (min-width: 569px) {
+  /* line 140, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_link-box.scss */
+  .band.link-box .wrap .right ul {
+    padding: 20px 0; }
+    /* line 143, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_link-box.scss */
+    .band.link-box .wrap .right ul li {
+      padding: 20px;
+      overflow: auto; }
+      /* line 148, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_link-box.scss */
+      .band.link-box .wrap .right ul li a span {
+        padding-right: 0;
+        font-size: 2rem; } }
+@media screen and (min-width: 1080px) {
+  /* line 165, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_link-box.scss */
+  .band.link-box .wrap {
+    padding: 0 2%;
+    font-size: 0; }
+    /* line 169, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_link-box.scss */
+    .band.link-box .wrap .left {
+      display: inline-block;
+      vertical-align: middle; }
+      /* line 175, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_link-box.scss */
+      .band.link-box .wrap .left h3 {
+        padding: 30px 0;
+        text-align: left; }
+      /* line 180, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_link-box.scss */
+      .band.link-box .wrap .left .scopy {
+        padding-bottom: 0; }
+        /* line 183, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_link-box.scss */
+        .band.link-box .wrap .left .scopy p {
+          text-align: left; }
+    /* line 189, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_link-box.scss */
+    .band.link-box .wrap .right {
+      display: inline-block;
+      vertical-align: middle; } }
+/* line 5, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_basic.scss */
+.band.basic .wrap {
+  position: relative;
+  font-size: 0;
+  overflow: visible; }
+  /* line 10, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_basic.scss */
+  .band.basic .wrap .left, .band.basic .wrap .right {
+    width: 100%; }
+    /* line 13, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_basic.scss */
+    .band.basic .wrap .left .scopy, .band.basic .wrap .right .scopy {
+      padding: 0 0 50px;
+      font-size: 1.125rem;
+      letter-spacing: 0.05em;
+      text-align: center;
+      text-transform: none;
+      font-family: 'Proxima Nova', Helvetica, Arial, sans-serif;
+      line-height: 24px; }
+      /* line 18, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_basic.scss */
+      .band.basic .wrap .left .scopy p, .band.basic .wrap .right .scopy p {
+        margin-bottom: 0;
+        padding: 0; }
+        /* line 22, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_basic.scss */
+        .band.basic .wrap .left .scopy p:first-of-type, .band.basic .wrap .right .scopy p:first-of-type {
+          margin: 0; }
+      /* line 27, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_basic.scss */
+      .band.basic .wrap .left .scopy ul, .band.basic .wrap .left .scopy ol, .band.basic .wrap .right .scopy ul, .band.basic .wrap .right .scopy ol {
+        display: inline-block;
+        margin-right: auto;
+        margin-bottom: 0;
+        margin-left: auto;
+        text-align: left; }
+    /* line 36, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_basic.scss */
+    .band.basic .wrap .left .btn, .band.basic .wrap .right .btn {
+      margin: 0 auto 50px; }
+    /* line 40, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_basic.scss */
+    .band.basic .wrap .left img, .band.basic .wrap .right img {
+      max-width: 100%;
+      border: 0; }
+    /* line 45, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_basic.scss */
+    .band.basic .wrap .left.phoner, .band.basic .wrap .right.phoner {
+      text-align: center; }
+      /* line 48, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_basic.scss */
+      .band.basic .wrap .left.phoner img, .band.basic .wrap .right.phoner img {
+        max-height: 670px; }
+
+@media screen and (min-width: 1080px) {
+  /* line 68, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_basic.scss */
+  .band.basic .wrap .left, .band.basic .wrap .right {
+    display: inline-block;
+    float: none;
+    vertical-align: middle; }
+    /* line 73, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_basic.scss */
+    .band.basic .wrap .left h3, .band.basic .wrap .right h3 {
+      margin: 0 0 25px;
+      text-align: left; }
+    /* line 78, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_basic.scss */
+    .band.basic .wrap .left .scopy, .band.basic .wrap .right .scopy {
+      padding: 0;
+      text-align: left; }
+    /* line 83, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_basic.scss */
+    .band.basic .wrap .left .btn, .band.basic .wrap .right .btn {
+      margin: 25px 0 !important; }
+  /* line 90, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_basic.scss */
+  .band.basic .wrap.left-image .left.phoner {
+    text-align: left; }
+  /* line 98, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_basic.scss */
+  .band.basic .wrap.right-image .right.phoner {
+    text-align: right; } }
+/* line 5, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_mixed-column.scss */
+.band.mixed-column .wrap {
+  font-size: 1.125rem;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: none;
+  font-family: 'Proxima Nova', Helvetica, Arial, sans-serif;
+  line-height: 24px; }
+  /* line 9, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_mixed-column.scss */
+  .band.mixed-column .wrap h4, .band.mixed-column .wrap h5 {
+    margin: 0 0 25px;
+    padding: 0;
+    font-size: 1.25rem;
+    letter-spacing: 0.275em;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Proxima Nova', Helvetica, Arial, sans-serif;
+    line-height: 24px; }
+  /* line 16, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_mixed-column.scss */
+  .band.mixed-column .wrap p {
+    margin-bottom: 0;
+    padding: 0; }
+  /* line 21, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_mixed-column.scss */
+  .band.mixed-column .wrap .intro {
+    padding: 0 0 50px; }
+    /* line 25, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_mixed-column.scss */
+    .band.mixed-column .wrap .intro p:first-of-type {
+      margin: 0; }
+  /* line 31, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_mixed-column.scss */
+  .band.mixed-column .wrap .columns {
+    padding: 0 0 50px; }
+    /* line 34, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_mixed-column.scss */
+    .band.mixed-column .wrap .columns .left, .band.mixed-column .wrap .columns .right {
+      margin: 0 auto; }
+      /* line 37, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_mixed-column.scss */
+      .band.mixed-column .wrap .columns .left ul, .band.mixed-column .wrap .columns .right ul {
+        display: inline-block;
+        margin-top: 0;
+        width: 288px;
+        text-align: left; }
+        /* line 43, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_mixed-column.scss */
+        .band.mixed-column .wrap .columns .left ul li, .band.mixed-column .wrap .columns .right ul li {
+          padding-top: 10px;
+          padding-bottom: 10px; }
+    /* line 53, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_mixed-column.scss */
+    .band.mixed-column .wrap .columns .left ul li:first-of-type {
+      padding-top: 0; }
+    /* line 60, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_mixed-column.scss */
+    .band.mixed-column .wrap .columns .right {
+      margin-top: -1em; }
+      /* line 63, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_mixed-column.scss */
+      .band.mixed-column .wrap .columns .right h4, .band.mixed-column .wrap .columns .right h5 {
+        padding-top: 1em; }
+        /* line 66, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_mixed-column.scss */
+        .band.mixed-column .wrap .columns .right h4:first-of-type, .band.mixed-column .wrap .columns .right h5:first-of-type {
+          margin-top: 50px; }
+      /* line 71, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_mixed-column.scss */
+      .band.mixed-column .wrap .columns .right ul {
+        margin-bottom: 0; }
+        /* line 75, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_mixed-column.scss */
+        .band.mixed-column .wrap .columns .right ul li:last-of-type {
+          padding-bottom: 0; }
+  /* line 83, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_mixed-column.scss */
+  .band.mixed-column .wrap .outro {
+    padding: 0 0 50px; }
+    /* line 87, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_mixed-column.scss */
+    .band.mixed-column .wrap .outro p:first-of-type {
+      margin: 0; }
+
+@media screen and (min-width: 569px) {
+  /* line 101, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_mixed-column.scss */
+  .band.mixed-column .wrap .columns {
+    width: 100%;
+    text-align: left; }
+    /* line 105, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_mixed-column.scss */
+    .band.mixed-column .wrap .columns h4, .band.mixed-column .wrap .columns h5 {
+      text-align: left; }
+    /* line 110, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_mixed-column.scss */
+    .band.mixed-column .wrap .columns .left ul, .band.mixed-column .wrap .columns .right ul {
+      display: block;
+      width: auto; }
+    /* line 116, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_mixed-column.scss */
+    .band.mixed-column .wrap .columns .left {
+      float: left;
+      margin-right: 2.5% !important;
+      width: 47.5% !important; }
+      /* line 121, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_mixed-column.scss */
+      .band.mixed-column .wrap .columns .left ul {
+        margin-bottom: 0; }
+        /* line 125, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_mixed-column.scss */
+        .band.mixed-column .wrap .columns .left ul li:last-of-type {
+          padding-bottom: 0; }
+    /* line 132, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_mixed-column.scss */
+    .band.mixed-column .wrap .columns .right {
+      float: right;
+      margin-top: 0;
+      margin-left: 2.5% !important;
+      width: 47.5% !important; }
+      /* line 138, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_mixed-column.scss */
+      .band.mixed-column .wrap .columns .right h4, .band.mixed-column .wrap .columns .right h5 {
+        padding-top: 0em; }
+        /* line 141, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_mixed-column.scss */
+        .band.mixed-column .wrap .columns .right h4:first-of-type, .band.mixed-column .wrap .columns .right h5:first-of-type {
+          margin-top: 0; }
+      /* line 148, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_mixed-column.scss */
+      .band.mixed-column .wrap .columns .right ul li:first-of-type {
+        padding-top: 0; } }
+/* line 4, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_icon-grid.scss */
+.band.icon-grid {
+  padding-bottom: 30px; }
+  /* line 7, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_icon-grid.scss */
+  .band.icon-grid .wrap {
+    font-size: 1.125rem;
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-transform: none;
+    font-family: 'Proxima Nova', Helvetica, Arial, sans-serif;
+    line-height: 24px; }
+    /* line 11, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_icon-grid.scss */
+    .band.icon-grid .wrap p.intro {
+      margin: 0 0 50px; }
+    /* line 15, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_icon-grid.scss */
+    .band.icon-grid .wrap .grid {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      font-size: 0; }
+      /* line 22, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_icon-grid.scss */
+      .band.icon-grid .wrap .grid .icon-wrap {
+        padding-bottom: 50px;
+        width: 100%;
+        line-height: 16px; }
+        /* line 27, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_icon-grid.scss */
+        .band.icon-grid .wrap .grid .icon-wrap img.icon {
+          display: block;
+          margin: 0 auto 25px;
+          width: 50%;
+          max-width: 150px; }
+        /* line 34, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_icon-grid.scss */
+        .band.icon-grid .wrap .grid .icon-wrap h4 {
+          margin: 0 0 10px;
+          padding: 0;
+          font-size: 0.875rem;
+          letter-spacing: 0.275em;
+          text-align: center;
+          text-transform: uppercase;
+          font-family: 'Proxima Nova Bold', Helvetica, Arial, sans-serif; }
+        /* line 40, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_icon-grid.scss */
+        .band.icon-grid .wrap .grid .icon-wrap p.icon-copy {
+          margin: 0;
+          padding: 0;
+          font-size: 0.875rem;
+          letter-spacing: 0.125em;
+          text-align: center;
+          text-transform: normal;
+          font-family: 'Proxima Nova', Helvetica, Arial, sans-serif;
+          opacity: .5; }
+    /* line 49, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_icon-grid.scss */
+    .band.icon-grid .wrap .btn {
+      margin-bottom: 50px; }
+
+@media screen and (min-width: 569px) {
+  /* line 62, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_icon-grid.scss */
+  .band.icon-grid .wrap .grid .icon-wrap {
+    display: inline-block;
+    padding: 0 2% 50px;
+    vertical-align: top; }
+    /* line 67, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_icon-grid.scss */
+    .band.icon-grid .wrap .grid .icon-wrap img.icon {
+      width: 75%; }
+  /* line 73, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_icon-grid.scss */
+  .band.icon-grid .wrap .grid.three .icon-wrap {
+    width: calc(100% / 3); }
+  /* line 79, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_icon-grid.scss */
+  .band.icon-grid .wrap .grid.four .icon-wrap {
+    width: 50%; } }
+@media screen and (min-width: 1080px) {
+  /* line 95, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_icon-grid.scss */
+  .band.icon-grid .wrap h3 {
+    padding: 30px 0;
+    font-size: 2rem;
+    letter-spacing: 0.275em;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Proxima Nova Light', Helvetica, Arial, sans-serif;
+    line-height: 40px; }
+  /* line 103, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_icon-grid.scss */
+  .band.icon-grid .wrap .grid .icon-wrap h4 {
+    font-size: 1.25rem;
+    letter-spacing: 0.275em;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Proxima Nova', Helvetica, Arial, sans-serif;
+    line-height: 24px; }
+  /* line 110, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_icon-grid.scss */
+  .band.icon-grid .wrap .grid.four .icon-wrap {
+    width: 25%; } }
+/* line 4, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_feed.scss */
+.band.feed {
+  color: #fff;
+  background-color: #262626; }
+  /* line 8, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_feed.scss */
+  .band.feed .wrap {
+    font-size: 1.125rem;
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-transform: none;
+    font-family: 'Proxima Nova', Helvetica, Arial, sans-serif;
+    line-height: 24px; }
+    /* line 12, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_feed.scss */
+    .band.feed .wrap p.intro {
+      color: rgba(255, 255, 255, 0.5); }
+    /* line 16, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_feed.scss */
+    .band.feed .wrap .rss-wrap {
+      position: relative;
+      width: 100%; }
+      /* line 20, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_feed.scss */
+      .band.feed .wrap .rss-wrap .rss-item {
+        width: 100%;
+        padding: 25px 0;
+        border-bottom: rgba(255, 255, 255, 0.5) 1px solid; }
+        /* line 26, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_feed.scss */
+        .band.feed .wrap .rss-wrap .rss-item a h4 {
+          margin: 0;
+          padding: 0;
+          font-size: 1.125rem;
+          letter-spacing: 0.275em;
+          text-align: center;
+          text-transform: uppercase;
+          font-family: 'Proxima Nova Bold', Helvetica, Arial, sans-serif; }
+        /* line 32, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_feed.scss */
+        .band.feed .wrap .rss-wrap .rss-item a p {
+          margin: 0;
+          padding: 0;
+          font-size: 0.875rem;
+          letter-spacing: normal;
+          text-align: center;
+          text-transform: uppercase;
+          font-family: 'Proxima Nova', Helvetica, Arial, sans-serif; }
+        /* line 38, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_feed.scss */
+        .band.feed .wrap .rss-wrap .rss-item a:link, .band.feed .wrap .rss-wrap .rss-item a:visited, .band.feed .wrap .rss-wrap .rss-item a:hover, .band.feed .wrap .rss-wrap .rss-item a:active {
+          color: #fff; }
+        /* line 42, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_feed.scss */
+        .band.feed .wrap .rss-wrap .rss-item a:hover {
+          color: #059e9a; }
+          /* line 45, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_feed.scss */
+          .band.feed .wrap .rss-wrap .rss-item a:hover:before {
+            content: url("/hubfs/icons-products/rss-arrow-teal.svg"); }
+        /* line 50, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_feed.scss */
+        .band.feed .wrap .rss-wrap .rss-item a:before {
+          display: none;
+          position: absolute;
+          top: 30px;
+          left: 0;
+          content: url("/hubfs/icons-products/rss-arrow-white.svg");
+          width: 8px; }
+        /* line 60, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_feed.scss */
+        .band.feed .wrap .rss-wrap .rss-item:last-of-type {
+          padding-bottom: 0;
+          border: 0; }
+  /* line 68, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_feed.scss */
+  .band.feed .wedgebox {
+    border-top-color: #262626; }
+
+@media screen and (min-width: 1080px) {
+  /* line 85, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_feed.scss */
+  .band.feed .wrap .rss-wrap {
+    font-size: 0; }
+    /* line 88, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_feed.scss */
+    .band.feed .wrap .rss-wrap .rss-item {
+      display: inline-block;
+      position: relative;
+      padding: 25px 25px 0 0;
+      width: auto;
+      max-width: calc(100% / 3);
+      border: 0;
+      vertical-align: top; }
+      /* line 98, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_feed.scss */
+      .band.feed .wrap .rss-wrap .rss-item a h4, .band.feed .wrap .rss-wrap .rss-item a p {
+        padding-left: 20px;
+        text-align: left; }
+      /* line 103, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_feed.scss */
+      .band.feed .wrap .rss-wrap .rss-item a:before {
+        display: block; } }
+@media screen and (max-width: 568px) {
+  /* line 5, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_vid-wistia.scss */
+  .wistia_popover_embed {
+    width: 100% !important; }
+    /* line 8, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_vid-wistia.scss */
+    .wistia_popover_embed > div {
+      width: 100% !important; }
+
+  /* line 13, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_vid-wistia.scss */
+  .wistia_socialbar {
+    display: none !important; } }
+/* line 21, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_vid-wistia.scss */
+.band.vid-wistia {
+  padding: 0;
+  background-color: #262626; }
+  /* line 25, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_vid-wistia.scss */
+  .band.vid-wistia .wistia_responsive_padding {
+    position: relative;
+    padding: 80px 0;
+    min-height: 240px; }
+    /* line 30, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_vid-wistia.scss */
+    .band.vid-wistia .wistia_responsive_padding .wistia_responsive_wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+      /* line 37, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_vid-wistia.scss */
+      .band.vid-wistia .wistia_responsive_padding .wistia_responsive_wrapper .wistia_embed {
+        display: inline-block;
+        width: 100%;
+        height: 100%; }
+        /* line 43, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_vid-wistia.scss */
+        .band.vid-wistia .wistia_responsive_padding .wistia_responsive_wrapper .wistia_embed > div > div {
+          position: relative; }
+          /* line 46, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_vid-wistia.scss */
+          .band.vid-wistia .wistia_responsive_padding .wistia_responsive_wrapper .wistia_embed > div > div div {
+            display: none !important; }
+          /* line 50, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_vid-wistia.scss */
+          .band.vid-wistia .wistia_responsive_padding .wistia_responsive_wrapper .wistia_embed > div > div img {
+            opacity: .1; }
+          /* line 54, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_vid-wistia.scss */
+          .band.vid-wistia .wistia_responsive_padding .wistia_responsive_wrapper .wistia_embed > div > div:before {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: 0;
+            padding: 0;
+            width: 100px;
+            color: #fff;
+            font-size: 1.5rem;
+            letter-spacing: 0.275em;
+            text-align: left;
+            text-transform: uppercase;
+            font-family: 'Proxima Nova', Helvetica, Arial, sans-serif;
+            z-index: 600;
+            -webkit-transform: translate(5%, -50%);
+            -moz-transform: translate(5%, -50%);
+            -ms-transform: translate(5%, -50%);
+            -o-transform: translate(5%, -50%);
+            transform: translate(5%, -50%); }
+          /* line 69, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_vid-wistia.scss */
+          .band.vid-wistia .wistia_responsive_padding .wistia_responsive_wrapper .wistia_embed > div > div:after {
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            width: 100px;
+            content: url("/hubfs/icons-products/video-play.svg");
+            z-index: 600;
+            -webkit-transform: translate(50%, -50%);
+            -moz-transform: translate(50%, -50%);
+            -ms-transform: translate(50%, -50%);
+            -o-transform: translate(50%, -50%);
+            transform: translate(50%, -50%); }
+          /* line 80, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_vid-wistia.scss */
+          .band.vid-wistia .wistia_responsive_padding .wistia_responsive_wrapper .wistia_embed > div > div:hover {
+            background-color: rgba(5, 158, 154, 0.35); }
+
+@media screen and (min-width: 569px) {
+  /* line 95, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_vid-wistia.scss */
+  .band.vid-wistia .wistia_responsive_padding {
+    min-height: 450px; }
+    /* line 102, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_vid-wistia.scss */
+    .band.vid-wistia .wistia_responsive_padding .wistia_responsive_wrapper .wistia_embed > div > div:before {
+      display: block; }
+    /* line 106, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_vid-wistia.scss */
+    .band.vid-wistia .wistia_responsive_padding .wistia_responsive_wrapper .wistia_embed > div > div:after {
+      -webkit-transform: translate(-5%, -50%);
+      -moz-transform: translate(-5%, -50%);
+      -ms-transform: translate(-5%, -50%);
+      -o-transform: translate(-5%, -50%);
+      transform: translate(-5%, -50%); } }
+@media screen and (min-width: 1080px) {
+  /* line 127, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_vid-wistia.scss */
+  .band.vid-wistia .wistia_responsive_padding .wistia_responsive_wrapper .wistia_embed > div > div:before {
+    width: 200px;
+    font-size: 2.25rem;
+    letter-spacing: 0.275em;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'Proxima Nova', Helvetica, Arial, sans-serif; }
+  /* line 132, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_vid-wistia.scss */
+  .band.vid-wistia .wistia_responsive_padding .wistia_responsive_wrapper .wistia_embed > div > div:after {
+    width: 200px; } }
+/* line 4, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_forms.scss */
+.band.former {
+  color: #fff; }
+  /* line 7, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_forms.scss */
+  .band.former .wrap {
+    padding: 0 5%; }
+    /* line 10, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_forms.scss */
+    .band.former .wrap h3 {
+      margin: 0;
+      padding: 0 0 15px;
+      border: 0; }
+    /* line 16, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_forms.scss */
+    .band.former .wrap form.hs-form {
+      padding-top: 20px; }
+      /* line 19, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_forms.scss */
+      .band.former .wrap form.hs-form fieldset {
+        margin: 0;
+        padding: 0;
+        max-width: none;
+        border: 0; }
+        /* line 25, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_forms.scss */
+        .band.former .wrap form.hs-form fieldset .hs-form-field {
+          float: none;
+          margin-bottom: 15px;
+          padding: 0;
+          width: 100%; }
+          /* line 31, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_forms.scss */
+          .band.former .wrap form.hs-form fieldset .hs-form-field .hs-input {
+            margin: 0;
+            padding: 10px;
+            width: 100%;
+            height: 34px;
+            background-color: rgba(38, 38, 38, 0.5);
+            border: 0;
+            border-radius: 0;
+            color: #fff;
+            font-size: 1.125rem;
+            letter-spacing: 0.125em;
+            text-align: left;
+            text-transform: uppercase;
+            font-family: 'Proxima Nova', Helvetica, Arial, sans-serif;
+            box-shadow: none; }
+          /* line 45, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_forms.scss */
+          .band.former .wrap form.hs-form fieldset .hs-form-field textarea.hs-input {
+            min-height: 200px; }
+          /* line 49, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_forms.scss */
+          .band.former .wrap form.hs-form fieldset .hs-form-field .hs-form-required {
+            display: none; }
+      /* line 55, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_forms.scss */
+      .band.former .wrap form.hs-form .hs_submit {
+        text-align: center; }
+        /* line 58, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_forms.scss */
+        .band.former .wrap form.hs-form .hs_submit .hs-button.primary {
+          margin-top: 20px;
+          width: 288px;
+          height: 60px;
+          color: #fff;
+          font-size: 1.125rem;
+          letter-spacing: 0.125em;
+          text-align: center;
+          text-transform: uppercase;
+          font-family: 'Proxima Nova Bold', Helvetica, Arial, sans-serif;
+          background: url("/hubfs/icons-products/button-white-outline.svg") no-repeat center center;
+          border: 0; }
+
+@media screen and (min-width: 569px) {
+  /* line 79, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_forms.scss */
+  .band.former .wrap h3 {
+    padding: 0 0 10px;
+    font-size: 2.25rem;
+    letter-spacing: .325em;
+    line-height: 42px; }
+  /* line 88, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_forms.scss */
+  .band.former .wrap form.hs-form fieldset.form-columns-2 {
+    font-size: 0 !important; }
+    /* line 91, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_forms.scss */
+    .band.former .wrap form.hs-form fieldset.form-columns-2 .hs-form-field {
+      display: inline-block;
+      width: 49%;
+      box-sizing: border-box; }
+      /* line 96, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_forms.scss */
+      .band.former .wrap form.hs-form fieldset.form-columns-2 .hs-form-field:nth-of-type(odd) {
+        margin-right: 1%; }
+      /* line 100, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_forms.scss */
+      .band.former .wrap form.hs-form fieldset.form-columns-2 .hs-form-field:nth-of-type(even) {
+        margin-left: 1%; } }
+/* line 4, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_footer.scss */
+.footer-container-wrapper {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  background-color: #262626;
+  z-index: 1000; }
+  /* line 14, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_footer.scss */
+  .footer-container-wrapper .footer-container.container-fluid {
+    padding: 30px 0; }
+    /* line 18, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_footer.scss */
+    .footer-container-wrapper .footer-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 .row-fluid {
+      width: 100%; }
+      /* line 21, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_footer.scss */
+      .footer-container-wrapper .footer-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 .row-fluid .footer-menu {
+        font-size: 1rem;
+        letter-spacing: 3px;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Proxima Nova Bold', Helvetica, Arial, sans-serif;
+        line-height: 20px; }
+        /* line 25, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_footer.scss */
+        .footer-container-wrapper .footer-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 .row-fluid .footer-menu .hs-menu-wrapper {
+          display: block;
+          width: 100%;
+          height: auto; }
+          /* line 30, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_footer.scss */
+          .footer-container-wrapper .footer-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 .row-fluid .footer-menu .hs-menu-wrapper ul {
+            display: block;
+            margin: 0;
+            padding: 0;
+            list-style: none; }
+            /* line 36, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_footer.scss */
+            .footer-container-wrapper .footer-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 .row-fluid .footer-menu .hs-menu-wrapper ul li {
+              position: relative;
+              display: block;
+              float: none;
+              width: 100%;
+              box-sizing: border-box;
+              overflow: auto; }
+              /* line 44, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_footer.scss */
+              .footer-container-wrapper .footer-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 .row-fluid .footer-menu .hs-menu-wrapper ul li a {
+                display: block;
+                position: relative;
+                float: none;
+                padding: 10px 12px;
+                width: 100%;
+                height: 40px;
+                color: #fff; }
+                /* line 53, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_footer.scss */
+                .footer-container-wrapper .footer-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 .row-fluid .footer-menu .hs-menu-wrapper ul li a:after {
+                  display: none; }
+              /* line 58, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_footer.scss */
+              .footer-container-wrapper .footer-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 .row-fluid .footer-menu .hs-menu-wrapper ul li.hs-item-has-children:after {
+                display: none; }
+    /* line 69, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_footer.scss */
+    .footer-container-wrapper .footer-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-2 .row-fluid {
+      width: 100%; }
+      /* line 72, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_footer.scss */
+      .footer-container-wrapper .footer-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-2 .row-fluid .mx-logo-vector {
+        display: inline-block;
+        position: relative;
+        float: none;
+        margin: 10px auto 15px;
+        width: 80px;
+        height: 33px; }
+        /* line 81, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_footer.scss */
+        .footer-container-wrapper .footer-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-2 .row-fluid .mx-logo-vector .cell-wrapper .hs_cos_wrapper {
+          position: relative;
+          font-size: 0;
+          line-height: 0; }
+          /* line 86, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_footer.scss */
+          .footer-container-wrapper .footer-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-2 .row-fluid .mx-logo-vector .cell-wrapper .hs_cos_wrapper a {
+            color: #fff; }
+            /* line 89, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_footer.scss */
+            .footer-container-wrapper .footer-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-2 .row-fluid .mx-logo-vector .cell-wrapper .hs_cos_wrapper a .logo.iconmx-logo {
+              display: block;
+              position: absolute;
+              top: 0;
+              left: 0;
+              margin-left: 0;
+              width: 80px;
+              height: 33px;
+              font-size: 0;
+              line-height: 0;
+              background: url(/hubfs/icons-products/MX-White-Web.svg) no-repeat center center;
+              background-size: contain;
+              -webkit-transform: transformX(-50%);
+              -moz-transform: transformX(-50%);
+              -ms-transform: transformX(-50%);
+              -o-transform: transformX(-50%);
+              transform: transformX(-50%); }
+    /* line 112, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_footer.scss */
+    .footer-container-wrapper .footer-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-3 .row-fluid {
+      width: 100%; }
+      /* line 115, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_footer.scss */
+      .footer-container-wrapper .footer-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-3 .row-fluid p {
+        margin: 0;
+        color: #fff;
+        font-size: 0.625rem;
+        letter-spacing: 0.125em;
+        text-align: center;
+        text-transform: none;
+        font-family: 'Proxima Nova Bold', Helvetica, Arial, sans-serif;
+        line-height: 14px; }
+        /* line 121, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_footer.scss */
+        .footer-container-wrapper .footer-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-3 .row-fluid p a {
+          color: #fff;
+          font-size: 0.625rem;
+          letter-spacing: 0.125em;
+          text-align: center;
+          text-transform: none;
+          font-family: 'Proxima Nova Bold', Helvetica, Arial, sans-serif; }
+        /* line 126, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_footer.scss */
+        .footer-container-wrapper .footer-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-3 .row-fluid p span {
+          font-size: 0.625rem;
+          letter-spacing: 0.125em;
+          text-align: center;
+          text-transform: none;
+          font-family: 'Proxima Nova Bold', Helvetica, Arial, sans-serif; }
+  /* line 134, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_footer.scss */
+  .footer-container-wrapper:before {
+    content: '';
+    position: absolute;
+    margin: -15px auto auto -20px;
     width: 0;
     height: 0;
     border-color: transparent transparent #262626 transparent;
     border-style: inset;
     border-style: solid;
-    content: '';
-    -webkit-transform: rotate(360deg);
-    border-width: 0 20px 15px 20px;
-    margin: -15px auto auto -20px; }
-  /* line 15, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_footer.scss */
-  footer .footer-links {
-    padding: 30px 0 15px 0; }
-    /* line 18, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_footer.scss */
-    footer .footer-links ul {
-      margin: 0;
-      padding: 0;
-      text-decoration: none; }
-      /* line 22, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_footer.scss */
-      footer .footer-links ul li {
-        display: inline-block;
-        padding: 10px;
-        letter-spacing: 3px; }
-  /* line 30, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_footer.scss */
-  footer .footer-logo-wrap span {
-    color: #ffffff;
-    font-size: 80px; }
-  /* line 35, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_footer.scss */
-  footer .footer-address {
-    font-size: 0.625em;
-    letter-spacing: 0.125em;
-    text-align: inherit;
-    text-transform: none; }
-    /* line 17, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/_mixins.scss */
-    footer .footer-address else {
-      font-family: 'Proxima Nova Light', Helvetica, Arial, sans-serif; }
-    /* line 38, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_footer.scss */
-    footer .footer-address p {
-      margin: 0;
-      padding: 0; }
+    border-width: 0 20px 15px 20px; }
 
 @media screen and (min-width: 569px) {
-  /* line 48, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_footer.scss */
-  .footer {
-    height: auto; }
-    /* line 51, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_footer.scss */
-    .footer:before {
-      position: absolute;
-      width: 0;
-      height: 0;
-      border-color: transparent transparent #262626 transparent;
-      border-style: inset;
-      border-style: solid;
-      content: '';
-      -webkit-transform: rotate(360deg);
-      border-width: 0 40px 30px 40px;
-      margin: -30px auto auto -40px; } }
-@media screen and (min-width: 960px) {
-  /* line 61, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_footer.scss */
-  .footer {
-    position: absolute;
-    width: 100%;
-    height: auto; }
-    /* line 65, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/partials/_footer.scss */
-    .footer:before {
-      position: absolute;
-      width: 0;
-      height: 0;
-      border-color: transparent transparent #262626 transparent;
-      border-style: inset;
-      border-style: solid;
-      content: '';
-      -webkit-transform: rotate(360deg);
-      border-width: 0 40px 30px 40px;
-      margin: -30px auto auto -40px; } }
+  /* line 157, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_footer.scss */
+  .footer-container-wrapper .footer-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 .row-fluid .footer-menu .hs-menu-wrapper ul {
+    display: inline-block; }
+    /* line 160, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_footer.scss */
+    .footer-container-wrapper .footer-container.container-fluid .row-fluid-wrapper.row-depth-1.row-number-1 .row-fluid .footer-menu .hs-menu-wrapper ul li {
+      display: inline-block;
+      width: auto; }
+  /* line 171, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/partials/_footer.scss */
+  .footer-container-wrapper:before {
+    margin: -30px auto auto -40px;
+    border-width: 0 40px 30px 40px; } }
+@media screen and (max-width: 568px) {
+  /* line 250, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
+  .hideMobile {
+    display: none !important; } }
+@media screen and (max-width: 1079px) {
+  /* line 260, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
+  .hideMoTab {
+    display: none !important; } }
+@media screen and (min-width: 569px) and (max-width: 1079px) {
+  /* line 269, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
+  .hideTablet {
+    display: none !important; } }
+@media screen and (min-width: 569px) {
+  /* line 278, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
+  h2 {
+    padding: 10px 0;
+    font-size: 2.25rem;
+    line-height: 42px; }
+
+  /* line 284, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
+  h3 {
+    padding: 30px 0;
+    font-size: 2rem;
+    line-height: 40px; }
+
+  /* line 290, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
+  .hideDeskTab {
+    display: none !important; }
+
+  /* line 294, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
+  .wedgebox {
+    margin: auto auto -30px -40px;
+    border-width: 30px 40px 0; } }
+@media screen and (min-width: 1080px) {
+  /* line 304, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
+  .wrap {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 5%; }
+
+  /* line 309, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
+  .centerer {
+    display: inline-block;
+    vertical-align: middle; }
+
+  /* line 313, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
+  .full {
+    float: left;
+    width: 100%; }
+
+  /* line 318, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
+  .left {
+    float: left;
+    margin-right: 2.5% !important;
+    width: 47.5% !important; }
+
+  /* line 324, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
+  .right {
+    float: right;
+    margin-left: 2.5% !important;
+    width: 47.5% !important; }
+
+  /* line 330, /Users/mattchadbourne/MX-Dev/mx-optimize/source/stylesheets/all.scss */
+  .hideDesktop {
+    display: none !important; } }
