@@ -1,0 +1,115 @@
+///////////////////////////////
+// Mobile +
+///////////////////////////////
+.band.former {
+	color: $white_off;
+
+	.wrap {
+		padding: 0 5%;
+
+		h3 {
+			margin: 0;
+			padding: 0 0 15px;
+			border: 0;
+		}
+
+		form.hs-form {
+			padding-top: 20px;
+
+			fieldset {
+				margin: 0;
+				padding: 0;
+				max-width: none;
+				border: 0;
+
+				.hs-form-field {
+					float: none;
+					margin-bottom: 15px;
+					padding: 0;
+					width: 100%;
+
+					.hs-input {
+						margin: 0;
+						padding: 10px;
+						width: 100%;
+						height: 34px;
+						background-color: rgba($in_the_black, .5);
+						border: 0;
+						border-radius: 0;
+						color: $white_off;
+						@include text(1.125rem, uppercase, left, .125em, reg);
+						box-shadow: none;
+
+					}
+
+					textarea.hs-input {
+						min-height: 200px;
+					}
+
+					.hs-form-required {
+						display: none;
+					}
+				}
+			}
+
+			.hs_submit {
+				text-align: center;
+
+				.hs-button.primary {
+					margin-top: 20px;
+					width: 288px;
+					height: 60px;
+					color: #fff;
+					@include text(1.125rem, uppercase, center, .125em, bold);
+					background: url("/hubfs/icons-products/button-white-outline.svg") no-repeat center center;
+					border: 0;
+				}
+			}
+		}
+	}
+}
+
+
+///////////////////////////////
+// Tablet +
+///////////////////////////////
+@media screen and (min-width: $tablet_min) {
+	.band.former {
+		.wrap {
+			h3 {
+				padding: 0 0 10px;
+				font-size: 2.25rem;
+				letter-spacing: .325em;
+				line-height: 42px;
+			}
+
+			form.hs-form {
+				fieldset {
+					&.form-columns-2 {
+						font-size: 0 !important;
+
+						.hs-form-field {
+							display: inline-block;
+							width: 49%;
+							box-sizing: border-box;
+
+							&:nth-of-type(odd) {
+								margin-right: 1%;
+							}
+
+							&:nth-of-type(even) {
+								margin-left: 1%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+///////////////////////////////
+// Desktop +
+///////////////////////////////
+@media screen and (min-width: $desktop_min) {
+}

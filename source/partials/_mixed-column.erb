@@ -1,0 +1,36 @@
+<section class="band mixed-column <%= bgColor %> <%= theme %>">
+	<div class="wrap">
+		<% if defined?(header) %>
+		<h3><%= header %></h3>
+		<% end %>
+
+		<% if defined?(intro) %>
+		<div class="intro">
+			<%= intro %>
+		</div>
+		<% end %>
+
+		<div class="columns clearfix">
+			<div class="left">
+				<%= left %>
+			</div>
+			<div class="right">
+				<%= right %>
+			</div>
+		</div>
+
+		<% if defined?(outro) %>
+		<div class="outro">
+			<%= outro %>
+		</div>
+		<% end %>
+
+		<% if defined?(btnLabel) %>
+		<div class='btn'>
+			<a href="<%= btnLink %>" target="<%= btnTarget %>"><span><%= btnLabel %></span></a>
+		</div>
+		<% end %>
+	</div>
+
+	<div class="wedgebox"></div>
+</section>

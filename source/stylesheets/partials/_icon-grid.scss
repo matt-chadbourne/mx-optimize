@@ -1,0 +1,117 @@
+///////////////////////////////
+// Mobile +
+///////////////////////////////
+.band.icon-grid {
+	padding-bottom: 30px;
+
+	.wrap {
+		@include text(1.125rem, none, center, .05em, reg);
+		line-height: 24px;
+
+		p.intro {
+			margin: 0 0 50px;
+		}
+
+		.grid {
+			position: relative;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			font-size: 0;
+
+			.icon-wrap {
+				padding-bottom: 50px;
+				width: 100%;
+				line-height: 16px;
+
+				img.icon {
+					display: block;
+					margin: 0 auto 25px;
+					width: 50%;
+					max-width: 150px;
+				}
+
+				h4 {
+					margin: 0 0 10px;
+					padding: 0;
+					@include text(.875rem, uppercase, center, .275em, bold);
+				}
+
+				p.icon-copy {
+					margin: 0;
+					padding: 0;
+					@include text(.875rem, normal, center, .125em, reg);
+					opacity: .5;
+				}
+			}
+		}
+
+		.btn {
+			margin-bottom: 50px;
+		}
+	}
+}
+
+///////////////////////////////
+// Tablet +
+///////////////////////////////
+@media screen and (min-width: $tablet_min) {
+	.band.icon-grid {
+		.wrap {
+			.grid {
+				.icon-wrap {
+					display: inline-block;
+					padding: 0 2% 50px;
+					vertical-align: top;
+
+					img.icon {
+						width: 75%;
+					}
+				}
+
+				&.three {
+					.icon-wrap {
+						width: calc(100% / 3);
+					}
+				}
+
+				&.four {
+					.icon-wrap {
+						width: 50%;
+					}
+
+				}
+			}
+		}
+	}
+}
+
+///////////////////////////////
+// Desktop +
+///////////////////////////////
+@media screen and (min-width: $desktop_min) {
+	.band.icon-grid {
+		.wrap {
+			h3 {
+				padding: 30px 0;
+				@include text(2rem, uppercase, center, .275em);
+				line-height: 40px;
+			}
+
+			.grid {
+				.icon-wrap {
+					h4 {
+						@include text(1.25rem, uppercase, center, .275em, reg);
+						line-height: 24px;
+					}
+				}
+
+				&.four {
+					.icon-wrap {
+						width: 25%;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,111 @@
+///////////////////////////////
+// Mobile +
+///////////////////////////////
+.band.feed {
+	color: $white_off;
+	background-color: $in_the_black;
+
+	.wrap {
+		@include text(1.125rem, none, center, .05em, reg);
+		line-height: 24px;
+
+		p.intro {
+			color: rgba($white_off, .5);
+		}
+
+		.rss-wrap {
+			position: relative;
+			width: 100%;
+
+			.rss-item {
+				width: 100%;
+				padding: 25px 0;
+				border-bottom: rgba($white_off, .5) 1px solid;
+
+				a {
+					h4 {
+						margin: 0;
+						padding: 0;
+						@include text(1.125rem, uppercase, center, .275em, bold);
+					}
+
+					p {
+						margin: 0;
+						padding: 0;
+						@include text(.875rem, uppercase, center, normal, reg);
+					}
+
+					&:link, &:visited, &:hover, &:active {
+						color: $white_off;
+					}
+
+					&:hover {
+						color: $bank_tealer;
+
+						&:before {
+							content: url('/hubfs/icons-products/rss-arrow-teal.svg');
+						}
+					}
+
+					&:before {
+						display: none;
+						position: absolute;
+						top: 30px;
+						left: 0;
+						content: url('/hubfs/icons-products/rss-arrow-white.svg');
+						width: 8px;
+					}
+				}
+
+				&:last-of-type {
+					padding-bottom: 0;
+					border: 0;
+				}
+			}
+		}
+	}
+
+	.wedgebox {
+		border-top-color: $in_the_black;
+	}
+}
+
+///////////////////////////////
+// Tablet +
+///////////////////////////////
+@media screen and (min-width: $tablet_min) {
+}
+
+///////////////////////////////
+// Desktop +
+///////////////////////////////
+@media screen and (min-width: $desktop_min) {
+	.band.feed {
+		.wrap {
+			.rss-wrap {
+				font-size: 0;
+
+				.rss-item {
+					display: inline-block;
+					position: relative;
+					padding: 25px 25px 0 0;
+					width: auto;
+					max-width: calc(100% / 3);
+					border: 0;
+					vertical-align: top;
+
+					a {
+						h4, p {
+							padding-left: 20px;
+							text-align: left;
+						}
+
+						&:before {
+							display: block;
+						}
+					}
+				}
+			}
+		}
+	}
+}

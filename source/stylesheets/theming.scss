@@ -1,0 +1,1180 @@
+///////////////////////////////
+// Variables & Mixins
+///////////////////////////////
+
+@import "variables";
+@import "mixins";
+
+///////////////////////////////
+// Global Color Classes
+///////////////////////////////
+.helios {
+  .btn {
+    background: url("/hubfs/icons-products/button-blue.svg") no-repeat center center;
+
+    a {
+      &:link,
+      &:visited,
+      &:hover,
+      &:active {
+        color: $white_off !important;
+      }
+    }
+  }
+
+  nav {
+    ul {
+      li {
+        a:hover {
+          color: $zen_blue !important;
+        }
+      }
+    }
+  }
+
+  ul {
+    &.checked {
+      li {
+        &:before {
+          content: url("/hubfs/icons-products/check-blue.svg");
+        }
+      }
+    }
+  }
+}
+
+.widenet {
+  .btn {
+    background: url("/hubfs/icons-products/button-teal.svg") no-repeat center center;
+
+    a {
+      &:link,
+      &:visited,
+      &:hover,
+      &:active {
+        color: $white_off !important;
+      }
+    }
+  }
+
+  nav {
+    ul {
+      li {
+        a:hover {
+          color: $bank_tealer !important;
+        }
+      }
+    }
+  }
+
+  ul {
+    &.checked {
+      li {
+        &:before {
+          content: url("/hubfs/icons-products/check-teal.svg");
+        }
+      }
+    }
+  }
+}
+
+.nexus {
+  .btn {
+    background: url("/hubfs/icons-products/button-green.svg") no-repeat center center;
+
+    a {
+      &:link,
+      &:visited,
+      &:hover,
+      &:active {
+        color: $white_off !important;
+      }
+    }
+  }
+
+  nav {
+    ul {
+      li {
+        a:hover {
+          color: $greenback !important;
+        }
+      }
+    }
+  }
+
+  ul {
+    &.checked {
+      li {
+        &:before {
+          content: url("/hubfs/icons-products/check-green.svg");
+        }
+      }
+    }
+  }
+}
+
+.hydra {
+  .btn {
+    background: url("/hubfs/icons-products/button-orange.svg") no-repeat center center;
+
+    a {
+      &:link,
+      &:visited,
+      &:hover,
+      &:active {
+        color: $white_off !important;
+      }
+    }
+  }
+
+  nav {
+    ul {
+      li {
+        a:hover {
+          color: $dreamcicle !important;
+        }
+      }
+    }
+  }
+
+  ul {
+    &.checked {
+      li {
+        &:before {
+          content: url("/hubfs/icons-products/check-orange.svg");
+        }
+      }
+    }
+  }
+}
+
+.insight {
+  .btn {
+    background: url("/hubfs/icons-products/button-yellow.svg") no-repeat center center;
+
+    a {
+      &:link,
+      &:visited,
+      &:hover,
+      &:active {
+        color: $in_the_black !important;
+      }
+    }
+  }
+
+  nav {
+    ul {
+      li {
+        a:hover {
+          color: $goldrush !important;
+        }
+      }
+    }
+  }
+
+  ul {
+    &.checked {
+      li {
+        &:before {
+          content: url("/hubfs/icons-products/check-yellow.svg");
+        }
+      }
+    }
+  }
+}
+
+.target {
+  .btn {
+    background: url("/hubfs/icons-products/button-red.svg") no-repeat center center;
+
+    a {
+      &:link,
+      &:visited,
+      &:hover,
+      &:active {
+        color: $white_off !important;
+      }
+    }
+  }
+
+  nav {
+    ul {
+      li {
+        a:hover {
+          color: $ruby_red !important;
+        }
+      }
+    }
+  }
+
+  ul {
+    &.checked {
+      li {
+        &:before {
+          content: url("/hubfs/icons-products/check-red.svg");
+        }
+      }
+    }
+  }
+}
+
+.moneydesktop {
+  .btn {
+    background: url("/hubfs/icons-products/button-mdgreen.svg") no-repeat center center;
+
+    a {
+      &:link,
+      &:visited,
+      &:hover,
+      &:active {
+        color: $white_off !important;
+      }
+    }
+  }
+
+  nav {
+    ul {
+      li {
+        a:hover {
+          color: $md_green !important;
+        }
+      }
+    }
+  }
+
+  ul {
+    &.checked {
+      li {
+        &:before {
+          content: url("/hubfs/icons-products/check-mdgreen.svg");
+        }
+      }
+    }
+  }
+}
+
+///////////////////////////////
+// Background Colors
+///////////////////////////////
+.bgc-master {
+  &.helios {
+    background-color: $zen_blue;
+
+    .btn {
+      a {
+        &:link,
+        &:visited,
+        &:hover,
+        &:active {
+          color: $zen_blue !important;
+        }
+
+        &:hover {
+          color: $zen_blue !important;
+        }
+      }
+    }
+
+    .wedgebox {
+      border-top-color: $zen_blue;
+    }
+  }
+
+  &.widenet {
+    background-color: $bank_tealer;
+
+    .btn {
+      a {
+        &:link,
+        &:visited,
+        &:hover,
+        &:active {
+          color: $bank_tealer !important;
+        }
+
+        &:hover {
+          color: $bank_tealer !important;
+        }
+      }
+    }
+
+    .wedgebox {
+      border-top-color: $bank_tealer;
+    }
+  }
+
+  &.nexus {
+    background-color: $greenback;
+
+    .btn {
+      a {
+        &:link,
+        &:visited,
+        &:hover,
+        &:active {
+          color: $greenback !important;
+        }
+
+        &:hover {
+          color: $greenback !important;
+        }
+      }
+    }
+
+    .wedgebox {
+      border-top-color: $greenback;
+    }
+  }
+
+  &.hydra {
+    background-color: $dreamcicle;
+
+    .btn {
+      a {
+        &:link,
+        &:visited,
+        &:hover,
+        &:active {
+          color: $dreamcicle !important;
+        }
+
+        &:hover {
+          color: $dreamcicle !important;
+        }
+      }
+    }
+
+    .wedgebox {
+      border-top-color: $dreamcicle;
+    }
+  }
+
+  &.insight {
+    color: $in_the_black !important;
+    background-color: $goldrush;
+
+    .btn {
+      background: url("/hubfs/icons-products/button-black.svg") no-repeat center center !important;
+
+      a {
+        &:link,
+        &:visited,
+        &:hover,
+        &:active {
+          color: $goldrush !important;
+        }
+
+        &:hover {
+          color: $goldrush !important;
+        }
+      }
+    }
+
+    .wedgebox {
+      border-top-color: $goldrush;
+    }
+  }
+
+  &.target {
+    background-color: $ruby_red;
+
+    .btn {
+      a {
+        &:link,
+        &:visited,
+        &:hover,
+        &:active {
+          color: $ruby_red !important;
+        }
+
+        &:hover {
+          color: $ruby_red !important;
+        }
+      }
+    }
+
+    .wedgebox {
+      border-top-color: $ruby_red;
+    }
+  }
+
+  &.moneydesktop {
+    background-color: $md_green;
+
+    .btn {
+      a {
+        &:link,
+        &:visited,
+        &:hover,
+        &:active {
+          color: $md_green !important;
+        }
+
+        &:hover {
+          color: $md_green !important;
+        }
+      }
+    }
+
+    .wedgebox {
+      border-top-color: $md_green;
+    }
+  }
+}
+
+///////////////////////////////
+// Header/Nav Color Classes
+///////////////////////////////
+.header-container-wrapper {
+  .header-container {
+    .row-fluid-wrapper {
+      .row-fluid {
+        .nav-extras {
+          .cell-wrapper {
+            .hs_cos_wrapper_type_custom_widget {
+              #nav-icon-wrap {
+                &.helios {
+                  .nav-icon-placement {
+                    #nav-icon {
+                      span {
+                        background-color: $zen_blue;
+                      }
+                    }
+                  }
+                }
+
+                &.widenet {
+                  .nav-icon-placement {
+                    #nav-icon {
+                      span {
+                        background-color: $bank_tealer;
+                      }
+                    }
+                  }
+                }
+
+                &.nexus {
+                  .nav-icon-placement {
+                    #nav-icon {
+                      span {
+                        background-color: $greenback;
+                      }
+                    }
+                  }
+                }
+
+                &.hydra {
+                  .nav-icon-placement {
+                    #nav-icon {
+                      span {
+                        background-color: $dreamcicle;
+                      }
+                    }
+                  }
+                }
+
+                &.insight {
+                  .nav-icon-placement {
+                    #nav-icon {
+                      span {
+                        background-color: $goldrush;
+                      }
+                    }
+                  }
+                }
+
+                &.target {
+                  .nav-icon-placement {
+                    #nav-icon {
+                      span {
+                        background-color: $ruby_red;
+                      }
+                    }
+                  }
+                }
+
+                &.moneydesktop {
+                  .nav-icon-placement {
+                    #nav-icon {
+                      span {
+                        background-color: $md_green;
+                      }
+                    }
+                  }
+                }
+              }
+
+              .nav-angle {
+                &.helios {
+                  background: url("/hubfs/icons-products/nav-angle-blue.svg") no-repeat center center;
+                }
+
+                &.widenet {
+                  background: url("/hubfs/icons-products/nav-angle-teal.svg") no-repeat center center;
+                }
+
+                &.nexus {
+                  background: url("/hubfs/icons-products/nav-angle-green.svg") no-repeat center center;
+                }
+
+                &.hydra {
+                  background: url("/hubfs/icons-products/nav-angle-orange.svg") no-repeat center center;
+                }
+
+                &.insight {
+                  background: url("/hubfs/icons-products/nav-angle-yellow.svg") no-repeat center center;
+                }
+
+                &.target {
+                  background: url("/hubfs/icons-products/nav-angle-red.svg") no-repeat center center;
+                }
+
+                &.moneydesktop {
+                  background: url("/hubfs/icons-products/nav-angle-mdgreen.svg") no-repeat center center;
+                }
+              }
+
+              .nav-right-color {
+                &.helios {
+                  background: $zen_blue;
+                }
+
+                &.widenet {
+                  background: $bank_tealer;
+                }
+
+                &.nexus {
+                  background: $greenback;
+                }
+
+                &.hydra {
+                  background: $dreamcicle;
+                }
+
+                &.insight {
+                  background: $goldrush;
+                }
+
+                &.target {
+                  background: $ruby_red;
+                }
+
+                &.moneydesktop {
+                  background: $md_green;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+///////////////////////////////
+// Hero-Main Color Classes
+///////////////////////////////
+.band.hero-main {
+  &.helios {
+    .herrow {
+      .top-arrow {
+        .arrow-img { content:url('/hubfs/icons-products/arrow-go-blue.svg') !important;}
+      }
+    }
+  }
+
+  &.widenet {
+    .herrow {
+      .top-arrow {
+        .arrow-img { content:url('/hubfs/icons-products/arrow-go-teal.svg') !important;}
+      }
+    }
+  }
+
+  &.nexus {
+    .herrow {
+      .top-arrow {
+        .arrow-img { content:url('/hubfs/icons-products/arrow-go-green.svg') !important;}
+      }
+    }
+  }
+
+  &.hydra {
+    .herrow {
+      .top-arrow {
+        .arrow-img { content:url('/hubfs/icons-products/arrow-go-orange.svg') !important;}
+      }
+    }
+  }
+
+  &.insight {
+    .herrow {
+      .top-arrow {
+        .arrow-img { content:url('/hubfs/icons-products/arrow-go-yellow.svg') !important;}
+      }
+    }
+  }
+
+  &.target {
+    .herrow {
+      .top-arrow {
+        .arrow-img { content:url('/hubfs/icons-products/arrow-go-red.svg') !important;}
+      }
+    }
+  }
+
+  &.moneydesktop {
+    .herrow {
+      .top-arrow {
+        .arrow-img { content:url('/hubfs/icons-products/arrow-go-mdgreen.svg') !important;}
+      }
+    }
+  }
+}
+
+///////////////////////////////
+// Hero-Main Color Classes
+///////////////////////////////
+.band.link-box {
+  &.helios {
+    .wrap {
+      .right {
+        ul {
+          li {
+            a {
+              .icon {
+                &.person {
+                  &::after {
+                    content:url('/hubfs/icons-products/adoption-blue.svg');
+                  }
+                }
+
+                &.dollar {
+                  &::after {
+                    content:url('/hubfs/icons-products/roi-outlines-blue.svg');
+                  }
+                }
+
+                &.network {
+                  &::after {
+                    content:url('/hubfs/icons-products/next-blue.svg');
+                  }
+                }
+
+                &.lock {
+                  &::after {
+                    content:url('/hubfs/icons-products/security-blue.svg');
+                  }
+                }
+              }
+
+              &:hover {
+                span {
+                  color: $zen_blue;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.widenet {
+    .wrap {
+      .right {
+        ul {
+          li {
+            a {
+              .icon {
+                &.person {
+                  &::after {
+                    content:url('/hubfs/icons-products/adoption-teal.svg');
+                  }
+                }
+
+                &.dollar {
+                  &::after {
+                    content:url('/hubfs/icons-products/roi-outlines-teal.svg');
+                  }
+                }
+
+                &.network {
+                  &::after {
+                    content:url('/hubfs/icons-products/next-teal.svg');
+                  }
+                }
+
+                &.lock {
+                  &::after {
+                    content:url('/hubfs/icons-products/security-teal.svg');
+                  }
+                }
+              }
+
+              &:hover {
+                span {
+                  color: $bank_tealer;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.nexus {
+    .wrap {
+      .right {
+        ul {
+          li {
+            a {
+              .icon {
+                &.person {
+                  &::after {
+                    content:url('/hubfs/icons-products/adoption-green.svg');
+                  }
+                }
+
+                &.dollar {
+                  &::after {
+                    content:url('/hubfs/icons-products/roi-outlines-green.svg');
+                  }
+                }
+
+                &.network {
+                  &::after {
+                    content:url('/hubfs/icons-products/next-green.svg');
+                  }
+                }
+
+                &.lock {
+                  &::after {
+                    content:url('/hubfs/icons-products/security-green.svg');
+                  }
+                }
+              }
+
+              &:hover {
+                span {
+                  color: $greenback;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.hydra {
+    .wrap {
+      .right {
+        ul {
+          li {
+            a {
+              .icon {
+                &.person {
+                  &::after {
+                    content:url('/hubfs/icons-products/adoption-orange.svg');
+                  }
+                }
+
+                &.dollar {
+                  &::after {
+                    content:url('/hubfs/icons-products/roi-outlines-orange.svg');
+                  }
+                }
+
+                &.network {
+                  &::after {
+                    content:url('/hubfs/icons-products/next-orange.svg');
+                  }
+                }
+
+                &.lock {
+                  &::after {
+                    content:url('/hubfs/icons-products/security-orange.svg');
+                  }
+                }
+              }
+
+              &:hover {
+                span {
+                  color: $dreamcicle;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.insight {
+    .wrap {
+      .right {
+        ul {
+          li {
+            a {
+              .icon {
+                &.person {
+                  &::after {
+                    content:url('/hubfs/icons-products/adoption-yellow.svg');
+                  }
+                }
+
+                &.dollar {
+                  &::after {
+                    content:url('/hubfs/icons-products/roi-outlines-yellow.svg');
+                  }
+                }
+
+                &.network {
+                  &::after {
+                    content:url('/hubfs/icons-products/next-yellow.svg');
+                  }
+                }
+
+                &.lock {
+                  &::after {
+                    content:url('/hubfs/icons-products/security-yellow.svg');
+                  }
+                }
+              }
+
+              &:hover {
+                span {
+                  color: $goldrush;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.target {
+    .wrap {
+      .right {
+        ul {
+          li {
+            a {
+              .icon {
+                &.person {
+                  &::after {
+                    content:url('/hubfs/icons-products/adoption-red.svg');
+                  }
+                }
+
+                &.dollar {
+                  &::after {
+                    content:url('/hubfs/icons-products/roi-outlines-red.svg');
+                  }
+                }
+
+                &.network {
+                  &::after {
+                    content:url('/hubfs/icons-products/next-red.svg');
+                  }
+                }
+
+                &.lock {
+                  &::after {
+                    content:url('/hubfs/icons-products/security-red.svg');
+                  }
+                }
+              }
+
+              &:hover {
+                span {
+                  color: $ruby_red;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.moneydesktop {
+    .wrap {
+      .right {
+        ul {
+          li {
+            a {
+              .icon {
+                &.person {
+                  &::after {
+                    content:url('/hubfs/icons-products/adoption-mdgreen.svg');
+                  }
+                }
+
+                &.dollar {
+                  &::after {
+                    content:url('/hubfs/icons-products/roi-outlines-mdgreen.svg');
+                  }
+                }
+
+                &.network {
+                  &::after {
+                    content:url('/hubfs/icons-products/next-mdgreen.svg');
+                  }
+                }
+
+                &.lock {
+                  &::after {
+                    content:url('/hubfs/icons-products/security-mdgreen.svg');
+                  }
+                }
+              }
+
+              &:hover {
+                span {
+                  color: $md_green;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+///////////////////////////////
+// RSS Color Classes
+///////////////////////////////
+.band.feed {
+  &.helios {
+    .rss-wrap {
+      .rss-item {
+        a {
+          &:hover {
+            color: $zen_blue;
+
+            &:before {
+              content: url('/hubfs/icons-products/rss-arrow-blue.svg');
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.widenet {
+    .rss-wrap {
+      .rss-item {
+        a {
+          &:hover {
+            color: $bank_tealer;
+
+            &:before {
+              content: url('/hubfs/icons-products/rss-arrow-teal.svg');
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.nexus {
+    .rss-wrap {
+      .rss-item {
+        a {
+          &:hover {
+            color: $greenback;
+
+            &:before {
+              content: url('/hubfs/icons-products/rss-arrow-green.svg');
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.hydra {
+    .rss-wrap {
+      .rss-item {
+        a {
+          &:hover {
+            color: $dreamcicle;
+
+            &:before {
+              content: url('/hubfs/icons-products/rss-arrow-orange.svg');
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.insight {
+    .rss-wrap {
+      .rss-item {
+        a {
+          &:hover {
+            color: $goldrush;
+
+            &:before {
+              content: url('/hubfs/icons-products/rss-arrow-yellow.svg');
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.target {
+    .rss-wrap {
+      .rss-item {
+        a {
+          &:hover {
+            color: $ruby_red;
+
+            &:before {
+              content: url('/hubfs/icons-products/rss-arrow-red.svg');
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.moneydesktop {
+    .rss-wrap {
+      .rss-item {
+        a {
+          &:hover {
+            color: $md_green;
+
+            &:before {
+              content: url('/hubfs/icons-products/rss-arrow-mdgreen.svg');
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+///////////////////////////////
+// RSS Color Classes
+///////////////////////////////
+.band.vid-wistia {
+  &.helios {
+    .wistia_responsive_padding {
+      .wistia_responsive_wrapper {
+        .wistia_embed {
+          >div {
+            >div {
+              &:hover {
+                background-color: rgba($zen_blue, .35);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.widenet {
+    .wistia_responsive_padding {
+      .wistia_responsive_wrapper {
+        .wistia_embed {
+          >div {
+            >div {
+              &:hover {
+                background-color: rgba($bank_tealer, .35);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.nexus {
+    .wistia_responsive_padding {
+      .wistia_responsive_wrapper {
+        .wistia_embed {
+          >div {
+            >div {
+              &:hover {
+                background-color: rgba($greenback, .35);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.hydra {
+    .wistia_responsive_padding {
+      .wistia_responsive_wrapper {
+        .wistia_embed {
+          >div {
+            >div {
+              &:hover {
+                background-color: rgba($dreamcicle, .35);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.insight {
+    .wistia_responsive_padding {
+      .wistia_responsive_wrapper {
+        .wistia_embed {
+          >div {
+            >div {
+              &:hover {
+                background-color: rgba($goldrush, .35);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.target {
+    .wistia_responsive_padding {
+      .wistia_responsive_wrapper {
+        .wistia_embed {
+          >div {
+            >div {
+              &:hover {
+                background-color: rgba($ruby_red, .35);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.moneydesktop {
+    .wistia_responsive_padding {
+      .wistia_responsive_wrapper {
+        .wistia_embed {
+          >div {
+            >div {
+              &:hover {
+                background-color: rgba($md_green, .35);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

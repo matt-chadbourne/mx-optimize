@@ -1,0 +1,367 @@
+///////////////////////////////
+// Mobile +
+///////////////////////////////
+header.band {
+  position: fixed;
+  height: 60px;
+  background: rgba($in_the_black, .9);
+  z-index: 999;
+  
+  @include transition (height .45s ease-in-out);
+
+  .wrap {
+    @include transition (height .45s ease-in-out);
+
+    .nav-bar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      z-index: 999;
+      
+      @include transition (height .45s ease-in-out);
+
+      .nav-logo {
+        z-index: 1000;
+
+        .logo {
+          position: absolute;
+          top: 50%;
+          left: 5%;
+          width: 80px;
+          height: 33px;
+          background: url("/hubfs/icons-products/MX-White-Web.svg") no-repeat center center;
+
+          @include transform (translateY(-50%));
+
+          @include transition (all .45s ease-in-out);
+        }
+      }
+
+      #nav-icon-wrap {
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        width: 110px;
+        height: 25px;
+        opacity: 1;
+        cursor: pointer;
+        z-index: 1000;
+
+        @include transform (translateY(-50%));
+
+        @include transition (all .25s ease-in-out);
+
+        .nav-icon-placement {
+          position: absolute;
+          top: 50%;
+          right: 0;
+
+          @include transform (translateY(-50%));
+
+          #nav-icon {
+            position: relative;
+            width: 40px;
+            height: 20px;
+
+            span {
+              position: absolute;
+              display: block;
+              width: 100%;
+              height: 2px;
+              background-color: $bank_tealer;
+              border-radius: 9px;
+              opacity: 1;
+
+              @include transform (rotate(0deg) scale(1,1));
+
+              @include transOrigin (center center);
+
+              @include transition (all .45s ease-in-out);
+
+               &:nth-child(1) {
+                top: 0;
+                opacity: 1;
+              }
+
+              &:nth-child(2),
+              &:nth-child(3) {
+                top: 50%;
+
+                @include transform (translateY(-50%));
+              }
+
+              &:nth-child(4) {
+                top: 100%;
+                opacity: 1;
+
+                @include transform (translateY(-100%));
+              }
+            }
+          }
+        }
+
+        &.open {
+          .nav-icon-placement {
+            #nav-icon {
+              span {
+                &:nth-child(1) {
+                  opacity: 0;
+                  @include transform (scale(0, 1));
+                }
+
+                &:nth-child(2) {
+                  @include transform (rotate(45deg));
+                }
+
+                &:nth-child(3) {
+                  @include transform (rotate(-45deg));
+                }
+
+                &:nth-child(4) {
+                  opacity: 0;
+                  @include transform (scale(0, 1));
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .nav-angle {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: -25px;
+        width: 205px;
+        height: 0;
+        background: url("/hubfs/icons-products/nav-angle-teal.svg") no-repeat center center;
+        opacity: 0;
+        z-index: 1;
+
+        // @include transition (opacity .45s ease-in-out);
+      }
+    }
+
+    nav {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      z-index: 998;
+
+      @include transform (translateY(-100%));
+
+      @include transition (all .45s ease-in-out);
+
+      ul {
+        position: relative;
+        top: -300px;
+        margin: 0 auto;
+        padding: 0 5%;
+        text-align: center;
+
+        @include transition (all .45s ease-in-out);
+
+        li {
+          margin: 15px 0 0;
+          padding: 0 0 15px;
+          width: 100%;
+          list-style: none;
+          border-bottom: rgba($white_off, .5) 1px solid;
+          opacity: 0;
+
+          @include transition (all .45s ease-in-out);
+          
+          a {
+            &:link,
+            &:visited,
+            &:hover,
+            &:active {
+              width: 100%;
+              color: $white_off;
+              @include text(1.5rem, uppercase, center, 3px, reg);
+            }
+
+            &:hover {
+              color: $bank_tealer;
+            }
+          }
+
+          &:first-of-type {
+            margin: 0;
+          }
+
+          &:nth-last-of-type(2) {
+            padding: 0;
+          }
+
+          &:nth-last-of-type(2),
+          &#contact.btn {
+            border-bottom: none;
+          }
+
+          &#contact.btn {
+            margin: 30px auto 0;
+          }
+        }
+      }
+
+      &.open {
+        opacity: 1;
+
+        @include transform (translateY(0));
+
+        ul {
+          top: 80px;
+
+          li {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  .nav-right-color {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(50% - 470px);
+    height: 60px;
+    background: $bank_tealer;
+    opacity: 0;
+    z-index: 1;
+
+    @include transition (height .45s ease-in-out);
+  }
+
+  &.open {
+    height: 100%;
+    background: rgba($in_the_black, .95);
+
+    .nav-wrap {
+      height: 100%;
+    }
+  }
+}
+
+///////////////////////////////
+// Tablet +
+///////////////////////////////
+@media screen and (min-width: $tablet_min) {
+  header.band {
+    .wrap {
+      .nav-bar {
+        .nav-angle {
+          height: 60px;
+        }
+      }
+
+      nav {
+        &.open {
+          ul {
+            top: 105px;
+          }
+        }
+      }
+    }
+  }
+}
+
+///////////////////////////////
+// Desktop +
+///////////////////////////////
+@media screen and (min-width: $desktop_min) {
+  header.band {
+    @include transition (height 0s ease-in-out);
+    .wrap {
+      margin: 0 auto;
+      padding: 0;
+
+      .nav-bar {
+        position: relative;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: auto;
+        margin: 0 auto;
+        padding: 0 5%;
+        width: 960px;
+
+        #nav-icon-wrap {
+          opacity: 0 !important;
+          z-index: 1;
+        }
+
+        .nav-angle {
+          opacity: 1;
+          z-index: 999;
+        }
+      }
+
+      nav {
+        top: 12.5%;
+        right: 0;
+        bottom: auto;
+        left: auto;
+        width: 100%;
+        height: 100px;
+        opacity: 1;
+        z-index: 1000;
+
+        ul {
+          position: absolute;
+          top: 105px;
+          right: 0;
+          margin: 0;
+
+          li {
+            display: inline-block;
+            margin: 0 40px 0 0;
+            padding: 0;
+            width: auto;
+            border-bottom: none;
+            opacity: 1;
+
+            a {
+              &:link,
+              &:visited,
+              &:hover,
+              &:active {
+                width: auto;
+                @include text(0.75rem !important, uppercase, center, 1.5px, reg);
+              }
+            }
+
+            &:first-of-type {
+              margin-right: 40px;
+            }
+
+            &#contact.btn {
+              margin: 0 0 0 10px;
+              padding: 0;
+              width: auto;
+              background: none !important;
+
+              &:active {
+                @include transform (translateY(0));
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .nav-right-color {
+      opacity: 1;
+    }
+  }
+}

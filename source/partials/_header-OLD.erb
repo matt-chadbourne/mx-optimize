@@ -1,0 +1,36 @@
+<header class="header band <%= page_classes %> clearfix">
+    <div class="wrap">
+      <div class="nav-bar">
+        <div class="nav-logo">
+          <a href="/">
+            <div class="logo"></div>
+          </a>
+        </div>
+
+        <div id="nav-icon-wrap">
+          <div class="nav-icon-placement">
+            <div id="nav-icon">  
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-angle"></div>
+      </div>
+
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="<% if defined?(link1Des) %><%= link1Des %><% end %>"><% if defined?(link1) %><%= link1 %><% end %></a></li>
+          <li><a href="<% if defined?(link2Des) %><%= link2Des %><% end %>"><% if defined?(link2) %><%= link2 %><% end %></a></li>
+          <li><a href="<% if defined?(link3Des) %><%= link3Des %><% end %>"><% if defined?(link3) %><%= link3 %><% end %></a></li>
+          <li><a href="<% if defined?(link4Des) %><%= link4Des %><% end %>"><% if defined?(link4) %><%= link4 %><% end %></a></li>
+          <li id="contact" class="btn"><a href="<% if defined?(link5Des) %><%= link5Des %><% end %>"><% if defined?(link5) %><%= link5 %><% end %></a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="nav-right-color"></div>
+</header>

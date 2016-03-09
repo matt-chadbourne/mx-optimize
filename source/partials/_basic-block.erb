@@ -1,0 +1,41 @@
+<section class="band basic <% if defined?(bgColor) %><%= bgColor %><% end %> <%= theme %>">
+	<div class="wrap left-image clearfix">
+
+		<!-- Left Image for Desktop -->
+		<% if (imageSide) == 'left' %>
+		<div class="left<% if defined?(phoner) %> phoner<% end %> hideMoTab">
+			<img src="<% if defined?(featureImage) %><%= featureImage %><% end %>" />
+		</div>
+		<% end %>
+
+		<!-- Title, Copy, and/or Button -->
+		<div class="<% if (imageSide) == 'left' %>right<% else %>left<% end %>">
+			<% if defined?(header) %>
+			<h3><%= header %></h3>
+			<% end %>
+
+			<% if defined?(sectionCopy) %>
+			<div class="scopy">
+				<%= sectionCopy %>
+			</div>
+			<% end %>
+
+			<% if defined?(btnLabel) %>
+			<div class='btn'>
+				<a href="<%= btnLink %>" target="<%= btnTarget %>"><span><%= btnLabel %></span></a>
+			</div>
+			<% end %>
+		</div>
+
+		<!-- Right Image ALL –– Left Image for Tablet and Mobile -->
+		<div class="<% if (imageSide) == 'left' %>left<% else %>right<% end %><% if defined?(phoner) %> phoner<% end %><% if (imageSide) == 'left' %> hideDesktop<% end %>">
+			<img src="<% if defined?(featureImage) %><%= featureImage %><% end %>" />
+		</div>
+
+		<!-- Clear Object Div DO NOT TOUCH -->
+		<div class="clear"></div>
+
+	</div>
+
+	<div class="wedgebox"></div>
+</section></section>>

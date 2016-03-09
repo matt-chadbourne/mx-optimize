@@ -1,0 +1,105 @@
+///////////////////////////////
+// Mobile +
+///////////////////////////////
+.band.basic {
+	.wrap {
+		position: relative;
+		font-size: 0;
+		overflow: visible;
+
+		.left, .right {
+			width: 100%;
+
+			.scopy {
+				padding: 0 0 50px;
+				@include text(1.125rem, none, center, .05em, reg);
+				line-height: 24px;
+
+				p {
+					margin-bottom: 0;
+					padding: 0;
+
+					&:first-of-type {
+						margin: 0;
+					}
+				}
+
+				ul, ol {
+					display: inline-block;
+					margin-right: auto;
+					margin-bottom: 0;
+					margin-left: auto;
+					text-align: left;
+				}
+			}
+
+			.btn {
+				margin: 0 auto 50px;
+			}
+
+			img {
+				max-width: 100%;
+				border: 0;
+			}
+
+			&.phoner {
+				text-align: center;
+
+				img {
+					max-height: 670px;
+				}
+			}
+		}
+	}
+}
+
+///////////////////////////////
+// Tablet +
+///////////////////////////////
+@media screen and (min-width: $tablet_min) {
+}
+
+///////////////////////////////
+// Desktop +
+///////////////////////////////
+@media screen and (min-width: $desktop_min) {
+	.band.basic {
+		.wrap {
+			.left, .right {
+				display: inline-block;
+				float: none;
+				vertical-align: middle;
+
+				h3 {
+					margin: 0 0 25px;
+					text-align: left;
+				}
+
+				.scopy {
+					padding: 0;
+					text-align: left;
+				}
+
+				.btn {
+					margin: 25px 0 !important;
+				}
+			}
+
+			&.left-image {
+				.left {
+					&.phoner {
+						text-align: left;
+					}
+				}
+			}
+
+			&.right-image {
+				.right {
+					&.phoner {
+						text-align: right;
+					}
+				}
+			}
+		}
+	}
+}

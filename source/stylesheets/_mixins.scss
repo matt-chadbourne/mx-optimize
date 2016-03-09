@@ -1,0 +1,210 @@
+@mixin colors($background:$white_off, $text:$in_the_black, $border:none) {
+    background-color: $background;
+    border: $border;
+    color: $text;
+}
+
+@mixin text($size:16px, $transform:none, $align:left, $ls:1px, $weight:'') {
+    font-size: $size;
+    letter-spacing: $ls;
+    text-align: $align;
+    text-transform: $transform;
+
+    @if $weight == bold {
+        font-family: 'Proxima Nova Bold', Helvetica, Arial, sans-serif;
+    } @else if $weight == reg {
+        font-family: 'Proxima Nova', Helvetica, Arial, sans-serif;
+    } @else {
+        font-family: 'Proxima Nova Light', Helvetica, Arial, sans-serif;
+    }
+}
+
+@mixin centerH($width:100%, $topBottom:0) {
+    margin: $topBottom auto;
+    width: $width;
+}
+
+@mixin centerVParent {
+    &:before {
+      display: inline-block;
+      height: 100%;
+      content: '';
+      vertical-align: middle;
+    }
+}
+
+@mixin centerVChild {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@mixin trbl($top:auto, $right:auto, $bottom:auto, $left:auto) {
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin placement($display:block, $float:none, $position:relative) {
+    position: $position;
+    float: $float;
+    display: $display;
+}
+
+@mixin dimensions($height:auto, $width:100%) {
+    width: $width;
+    height: $height;
+}
+
+@mixin spacing($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
+}
+
+@mixin removeSpacing {
+    margin: 0;
+    padding: 0;
+}
+
+// $color = background color of the div
+// $location = top or bottom
+// $viewport = desktop, tablet, or mobile
+@mixin blockTriangle($color, $location, $viewport) {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent transparent $color transparent;
+    border-style: inset;
+    border-style: solid;
+    content: '';
+
+    @if $location == top {
+        -webkit-transform: rotate(360deg)
+    } @else {
+        -webkit-transform: rotate(180deg)
+    }
+
+    @if $viewport == desktop {
+        border-width: 0 40px 30px 40px
+    } @else if $viewport == tablet {
+        border-width: 0 40px 30px 40px
+    } @else {
+        border-width: 0 20px 15px 20px
+    }
+
+    @if $location == top {
+        @if $viewport == desktop {
+            margin: -30px auto auto -40px
+        } @else if $viewport == tablet {
+            margin: -30px auto auto -40px
+        } @else {
+            margin: -15px auto auto -20px
+        }
+    } @else {
+        @if $viewport == desktop {
+            margin: 600px auto auto -524px
+        } @else if $viewport == tablet {
+            margin: 8% auto auto -40px
+        } @else {
+            margin: 25% auto auto -20px
+        }
+    }
+}
+
+@mixin transition ($trans...) {
+  -webkit-transition: $trans;
+  -moz-transition: $trans;
+  -ms-transition: $trans;
+  -o-transition: $trans;
+  transition: $trans;
+}
+
+@mixin transform ($methods) {
+  -webkit-transform: $methods;
+  -moz-transform: $methods;
+  -ms-transform: $methods;
+  -o-transform: $methods;
+  transform: $methods;
+}
+
+@mixin transOrigin ($loc) {
+  -webkit-transform-origin: $loc;
+  -moz-transform-origin: $loc;
+  -ms-transform-origin: $loc;
+  -o-transform-origin: $loc;
+  transform-origin: $loc;
+}
+
+@mixin animate ($animate...) {
+  $max: length($animate);
+  $animations: '';
+
+  @for $i from 1 through $max {
+    $animations: #{$animations + nth($animate, $i)};
+
+    @if $i < $max {
+      $animations: #{$animations + ", "};
+    }
+  }
+  -webkit-animation: $animations;
+  -moz-animation:    $animations;
+  -o-animation:      $animations;
+  animation:         $animations;
+}
+
+@mixin keyframes ($animationName) {
+  @-webkit-keyframes #{$animationName} {
+    @content;
+  }
+  @-moz-keyframes #{$animationName} {
+    @content;
+  }
+  @-ms-keyframes #{$animationName} {
+    @content;
+  }
+  @-o-keyframes #{$animationName} {
+    @content;
+  }
+  @keyframes #{$animationName} {
+    @content;
+  }
+}
+
+@mixin delay ($delay) {
+  -webkit-animation-delay: $delay;
+  animation-delay: $delay;
+}
+
+///////////////////////////////
+// Animations
+///////////////////////////////
+
+@include keyframes (fade-in) {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@include keyframes (enter-top) {
+  0%   { top: -50px; }
+  100% { top: 0; }
+}
+
+@include keyframes (enter-right) {
+  0%   { right: -50px; }
+  100% { right: 0; }
+}
+
+@include keyframes (arrow-bounce) {
+  0%   {
+    position: relative;
+    bottom: 20px;
+  }
+  50%  {
+    position: relative;
+    bottom: 0;
+  }
+  100% {
+    position: relative;
+    bottom: 20px;
+  }
+}

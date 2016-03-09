@@ -1,0 +1,141 @@
+///////////////////////////////
+// Mobile ONLY
+///////////////////////////////
+@media screen and (max-width: $mobile_max) {
+	.wistia_popover_embed {
+		width: 100% !important;
+
+		>div {
+			width: 100% !important;
+		}
+	}
+
+	.wistia_socialbar {
+		display: none !important;
+	}
+}
+
+///////////////////////////////
+// Mobile +
+///////////////////////////////
+.band.vid-wistia {
+	padding: 0;
+	background-color: $in_the_black;
+
+	.wistia_responsive_padding {
+		position: relative;
+		padding: 80px 0;
+		min-height: 240px;
+
+		.wistia_responsive_wrapper {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+
+			.wistia_embed {
+				display: inline-block;
+				width: 100%;
+				height: 100%;
+
+				>div {
+					>div {
+						position: relative;
+
+						div {
+							display: none !important;
+						}
+
+						img {
+							opacity: .1;
+						}
+
+						&:before {
+							display: none;
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							margin: 0;
+							padding: 0;
+							width: 100px;
+							color: $white_off;
+							@include text(1.5rem, uppercase, left, .275em, reg);
+							z-index: 600;
+
+							@include transform(translate(5%,-50%));
+						}
+
+						&:after {
+							position: absolute;
+							top: 50%;
+							right: 50%;
+							width: 100px;
+							content: url('/hubfs/icons-products/video-play.svg');
+							z-index: 600;
+
+							@include transform(translate(50%,-50%));
+						}
+
+						&:hover {
+							background-color: rgba($bank_tealer, .35);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+///////////////////////////////
+// Tablet +
+///////////////////////////////
+@media screen and (min-width: $tablet_min) {
+	.band.vid-wistia {
+		.wistia_responsive_padding {
+			min-height: 450px;
+
+			.wistia_responsive_wrapper {
+				.wistia_embed {
+					>div {
+						>div {
+							&:before {
+								display: block;
+							}
+
+							&:after {
+								@include transform(translate(-5%,-50%));
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+///////////////////////////////
+// Desktop +
+///////////////////////////////
+@media screen and (min-width: $desktop_min) {
+	.band.vid-wistia {
+		.wistia_responsive_padding {
+			.wistia_responsive_wrapper {
+				.wistia_embed {
+					>div {
+						>div {
+							&:before {
+								width: 200px;
+								@include text(2.25rem, uppercase, left, .275em, reg);
+							}
+
+							&:after {
+								width: 200px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+<section class="band sect-intro <% if defined?(bgColor) %><%= bgColor %><% end %> <%= theme %>">
+	<div class="wrap">
+		<% if defined?(header) %>
+		<h2><%= header %></h2>
+		<% end %>
+
+		<% if defined?(sectionCopy) %>
+		<div class="scopy">
+			<%= sectionCopy %>
+		</div>
+		<% end %>
+
+		<% if defined?(btnLabel) %>
+		<div class='btn'>
+			<a href="<%= btnLink %>" target="<%= btnTarget %>"><span><%= btnLabel %></span></a>
+		</div>
+		<% end %>
+	</div>
+
+	<div class="wedgebox"></div>
+</section>

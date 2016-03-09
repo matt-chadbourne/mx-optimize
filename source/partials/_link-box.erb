@@ -1,0 +1,68 @@
+<section class="band link-box bgc-grey <%= theme %>">
+	<div class="wrap">
+		<style type="text/css" title="text/css">
+		</style>
+
+		<div class="left">
+			<% if defined?(header) %>
+			<h3><%= header %></h3>
+			<% end %>
+
+			<div class="scopy">
+				<% if defined?(subHeader) %>
+				<p><%= subHeader %></p>
+				<% end %>
+			</div>
+		</div>
+
+		<div class="right clearfix">
+			<ul>
+				<% if defined?(link_1_label)&&(link_1_url)&&(link_1_icon) %>
+				<li>
+					<a href="<%= link_1_url %>">
+						<div class="icon <%= link_1_icon %>">
+							<div class="lb-img"></div>
+						</div>
+						<span><%= link_1_label %></span>
+					</a>
+				</li>
+				<% end %>
+
+				<% if defined?(link_2_label)&&(link_2_url)&&(link_2_icon) %>
+				<li>
+					<a href="<%= link_2_url %>">
+						<div class="icon <%= link_2_icon %>">
+							<div class="lb-img"></div>
+						</div>
+						<span><%= link_2_label %></span>
+					</a>
+				</li>
+				<% end %>
+
+				<% if defined?(link_3_label)&&(link_3_url)&&(link_3_icon) %>
+				<li>
+					<a href="<%= link_3_url %>">
+						<div class="icon <%= link_3_icon %>">
+							<div class="lb-img"></div>
+						</div>
+						<span><%= link_3_label %></span>
+					</a>
+				</li>
+				<% end %>
+
+				<% if defined?(link_4_label)&&(link_4_url)&&(link_4_icon) %>
+				<li>
+					<a href="<%= link_4_url %>">
+						<div class="icon <%= link_4_icon %>">
+							<div class="lb-img"></div>
+						</div>
+						<span><%= link_4_label %></span>
+					</a>
+				</li>
+				<% end %>
+			</ul>
+		</div>
+	</div>
+
+	<div class="wedgebox"></div>
+</section>

@@ -1,0 +1,87 @@
+///////////////////////////////
+// Variables & Mixins
+///////////////////////////////
+
+@import "variables";
+@import "mixins";
+
+///////////////////////////////
+// Mobile Only
+///////////////////////////////
+@media screen and (max-width: $mobile_max) {
+  .hideMobile {
+    display: none !important;
+  }
+
+}
+
+///////////////////////////////
+// Tablet -
+///////////////////////////////
+@media screen and (max-width: $tablet_max) {
+  .hideMoTab {
+    display: none !important;
+  }
+}
+
+///////////////////////////////
+// Tablet Only
+///////////////////////////////
+@media screen and (min-width: $tablet_min) and (max-width: $tablet_max) {
+  .hideTablet {
+    display: none !important;
+  }
+}
+
+///////////////////////////////
+// Tablet +
+///////////////////////////////
+@media screen and (min-width: $tablet_min) {
+  h2 {
+    font-size: 2.25em;
+  }
+
+  .hideDeskTab {
+    display: none !important;
+  }
+
+  .wedgebox {
+    margin: auto auto -30px -40px;
+    border-width: 30px 40px 0;
+  }
+}
+
+///////////////////////////////
+// Desktop +
+///////////////////////////////
+@media screen and (min-width: $desktop_min) {
+  .wrap {
+    position: relative;
+    @include spacing(0 auto, 0 5%);
+  }
+
+  .centerer {
+    @include centerVChild;
+  }
+
+  .full {
+    float: left;
+    width: 100%;
+  }
+
+  .left {
+    float: left;
+    margin-right: 2.5% !important;
+    width: 47.5% !important;
+  }
+
+  .right {
+    float: right;
+    margin-left: 2.5% !important;
+    width: 47.5% !important;
+  }
+
+  .hideDesktop {
+    display: none !important;
+  }
+}

@@ -1,0 +1,45 @@
+@media screen and (max-width: 568px) {
+  /* line 10, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/responsive.scss */
+  .hideMobile {
+    display: none !important; } }
+@media screen and (min-width: 569px) and (max-width: 959px) {
+  /* line 20, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/responsive.scss */
+  .hideTablet {
+    display: none !important; } }
+@media screen and (min-width: 569px) {
+  /* line 29, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/responsive.scss */
+  h2 {
+    font-size: 2.25em; }
+
+  /* line 33, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/responsive.scss */
+  .hideDeskTab {
+    display: none !important; } }
+@media screen and (min-width: 960px) {
+  /* line 42, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/responsive.scss */
+  .wrapper {
+    margin: 0 auto;
+    width: 960px; }
+
+  /* line 46, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/responsive.scss */
+  .centerer {
+    display: inline-block;
+    vertical-align: middle; }
+
+  /* line 50, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/responsive.scss */
+  .full {
+    float: left;
+    width: 100%; }
+
+  /* line 55, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/responsive.scss */
+  .left {
+    float: left;
+    width: 50%; }
+
+  /* line 60, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/responsive.scss */
+  .right {
+    float: right;
+    width: 50%; }
+
+  /* line 65, /Users/mattchadbourne/MX-Dev/mx-com-2/source/stylesheets/responsive.scss */
+  .hideDesktop {
+    display: none !important; } }

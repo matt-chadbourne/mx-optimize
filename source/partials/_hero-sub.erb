@@ -1,0 +1,29 @@
+<section class="band hero-sub" <% if defined?(imgBG) %>style="background-image:url(<%= imgBG %>) !important;"<% end %>>
+<!-- <div class="band hero-sub <%= page_classes %>" style="background-image:url(/hubfs/laptopdesk.png);"> -->
+	<!-- <div class="overlay" style="background-color: rgba(5,158,154,1);"></div> -->
+	<!-- <div class="overlay" style="background-color: rgba(38,38,38,0.75);"></div> -->
+	<div class="overlay" <% if defined?(overlayColor) %>style="background-color: rgba(<%= overlayColor %>,<%= overlayOpacity %>);"<% end %>></div>
+
+	<div class="wrap">
+		<div class="hero-content" style="color: #fff;">
+			<!-- not product -->
+			<% if defined?(titleReg) %><h1 class="non-prod"><%= titleReg %></h1><% end %>
+			<% if defined?(tagReg) %><span class="non-prod"><%= tagReg %></span><% end %>
+			<!-- not product -->
+
+			<!-- if product -->
+			<% if defined?(prodImg) %>
+
+			<div class="prod-logo <% if !defined?(titleProd) %>md<% end %>">
+				<img src="<%= prodImg %>" alt="" />
+			</div>
+
+			<div class="prod-title">
+				<% if defined?(titleProd) %><h2><%= titleProd %></h2><% end %>
+				<% if defined?(tagProd) %><h1><%= tagProd %></h1><% end %>
+			</div>
+			<% end %>
+			<!-- if product -->
+		</div>
+	</div>
+</section>

@@ -1,0 +1,50 @@
+<section class="band hero-main <%= theme %>">
+	<style type="text/css" title="text/css">
+
+		<% if defined?(mtBG) %>
+		.band.hero-main:before { background-image:url(<%= mtBG %>) !important; }
+		<% else %>
+		.band.hero-main:before { background-image: none !important; }
+		<% end %>
+
+		<% if defined?(dtBG) %>
+		@media screen and (min-width: 1080px) {
+			.band.hero-main:before { background-image:url(<%= dtBG %>) !important; }
+		}
+		<% end %>
+	</style>
+
+	<div class="overlay" style="background-color:rgba(<%= overlayColor %>,<%= overlayOpacity %>);"></div>
+
+	<div class="wrap">
+		<div class="hm-content" style="color: <%= textColor %>;">
+			<% if defined?(header) %>
+			<h1 class="main-hdr"><%= header %></h1>
+			<% end %>
+			
+			<% if defined?(loneImage) %>
+			<img src="<%= loneImage %>" alt="" class="lone-image">
+			<% end %>
+
+			<div class="subcontent">
+				<% if defined?(subHeader) %>
+				<div class='sub-hdr'>
+					<p><%= subHeader %></p>
+				</div>
+				<% end %>
+
+				<% if defined?(btnLabel) %>
+				<div class='btn'>
+					<a href="<%= btnLink %>" target="<%= btnTarget %>"><span><%= btnLabel %></span></a>
+				</div>
+				<% end %>
+			</div>
+		</div>
+	</div>
+
+	<div class="herrow">
+		<div class="top-arrow"> 
+			<a href="#sectInt"><img class="arrow-img"></a>
+		</div>
+	</div>
+</section>

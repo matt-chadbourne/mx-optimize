@@ -1,0 +1,57 @@
+<div class="header-container-wrapper">
+	<div class="header-container container-fluid">
+		<div class="row-fluid-wrapper row-depth-1 row-number-1 ">
+			<div class="row-fluid ">
+				<div class="span2 widget-span widget-type-custom_widget mx-logo-vector" style data-widget-type="custom_widget" data-x="0" data-w="2">
+					<div class="cell-wrapper layout-widget-wrapper">
+						<span id="" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_custom_widget" style data-hs-cos-type="custom_widget" data-x="0" data-w="2">
+
+            				<%= partial "partials/header-logo" %>
+
+						</span>
+					</div>
+				</div>
+
+				<div class="span8 widget-span widget-type-menu header-menu <%= page_classes %>" style="" data-widget-type="menu" data-x="2" data-w="10">
+					<div class="cell-wrapper layout-widget-wrapper">
+						<span id="hs_cos_wrapper_module_14497764171845022" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="menu">
+							<div id="hs_menu_wrapper_module_14497764171845022" class="hs-menu-wrapper active-branch flyouts hs-menu-flow-horizontal" data-sitemap-name="V1 Menu Refined">
+								<ul>
+									<li class="hs-menu-item hs-menu-depth-1">
+										<a href="/solutions">Solutions</a>
+									</li>
+									<li class="hs-menu-item hs-menu-depth-1">
+										<a href="/products">Products</a></li>
+									<li class="hs-menu-item hs-menu-depth-1">
+										<a href="/company">Company</a>
+									</li>
+									<li class="hs-menu-item hs-menu-depth-1">
+										<a href="http://media.mx.com" target="_blank">Resources</a>
+									</li>
+									<li class="hs-menu-item hs-menu-depth-1 navContactItem btn">
+										<a href="/contact-us">Contact us</a>
+									</li>
+								</ul>
+							</div>
+						</span>
+					</div>
+				</div>
+
+				<div class="span2 widget-span widget-type-custom_widget nav-extras" style data-widget-type="custom_widget" data-x="0" data-w="2">
+					<div class="cell-wrapper layout-widget-wrapper">
+						<span id="" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_custom_widget" style data-hs-cos-type="custom_widget" data-x="0" data-w="2">
+
+							<%= partial(
+            					:"partials/header-extras",
+            					:locals => {
+									:theme			=>	"",
+            					}
+            				) %>
+
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

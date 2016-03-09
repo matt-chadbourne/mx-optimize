@@ -1,0 +1,197 @@
+///////////////////////////////
+// Mobile +
+///////////////////////////////
+.band.link-box {
+	.wrap {
+		.left {
+			display: block;
+			position: relative;
+			float: none;
+			width: 100%;
+
+			h3 {
+				margin: 0 0 10px;
+			}
+
+			.scopy {
+				padding: 25px 0;
+
+				p {
+					margin: 0;
+					padding: 0;
+					@include text(1.125rem, none, center, .05em, reg);
+					line-height: 24px;
+				}
+			}
+		}
+
+		.right {
+			display: block;
+			position: relative;
+			float: none;
+			margin: 0;
+			width: 100%;
+			text-align: center;
+			background-color: $white_off;
+
+			ul {
+				display: inline-block;	
+				padding: 0;
+				width: auto;
+				list-style: none;
+				overflow: auto;
+
+				li {
+					float: left;
+					clear: both;
+					padding: 20px 0;
+					white-space: nowrap;
+
+					a {
+						.icon {
+							display: inline-block;
+							width: 40px;
+							font-size: 0;
+							vertical-align: middle;
+
+							&.person {
+								.lb-img {
+									content:url('/hubfs/icons-products/adoption-silver.svg');
+								}
+
+								&::after {
+									content:url('/hubfs/icons-products/adoption-teal.svg');
+								}
+							}
+
+							&.dollar {
+								.lb-img {
+									content:url('/hubfs/icons-products/roi-outlines-silver.svg');
+								}
+
+								&::after {
+									content:url('/hubfs/icons-products/roi-outlines-teal.svg');
+								}
+							}
+
+							&.network {
+								.lb-img {
+									content:url('/hubfs/icons-products/next-silver.svg');
+								}
+
+								&::after {
+									content:url('/hubfs/icons-products/next-teal.svg');
+								}
+							}
+
+							&.lock {
+								.lb-img {
+									content:url('/hubfs/icons-products/security-silver.svg');
+								}
+
+								&::after {
+									content:url('/hubfs/icons-products/security-teal.svg');
+								}
+							}
+
+							&::after {
+								display: none;
+							}
+						}
+
+						span {
+							display: inline-block;
+							padding: 0 0 0 22px;
+							color: $shiny_silver;
+							@include text(1.25rem, uppercase, left, .275em, reg);
+							line-height: 40px;
+							vertical-align: middle;
+						}
+
+						&:hover {
+							.icon {
+								.lb-img {
+									display: none;
+								}
+
+								&::after {
+									display: inline-block;
+								}
+							}
+
+							span {
+								color: $bank_tealer;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+///////////////////////////////
+// Tablet +
+///////////////////////////////
+@media screen and (min-width: $tablet_min) {
+	.band.link-box {
+		.wrap {
+			.right {
+				ul {
+					padding: 20px 0;
+
+					li {
+						padding: 20px;
+						overflow: auto;
+
+						a {
+							span {
+								padding-right: 0;
+								font-size: 2rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+///////////////////////////////
+// Desktop +
+///////////////////////////////
+@media screen and (min-width: $desktop_min) {
+	.band.link-box {
+		.wrap {
+			padding: 0 2%;
+			font-size: 0;
+
+			.left {
+				display: inline-block;
+				// margin-right: 2.5%;
+				// width: 47.5%;
+				vertical-align: middle;
+
+				h3 {
+					padding: 30px 0;
+					text-align: left;
+				}
+
+				.scopy {
+					padding-bottom: 0;
+
+					p {
+						text-align: left;
+					}
+				}
+			}
+
+			.right {
+				display: inline-block;
+				// margin-left: 2.5%;
+				// width: 47.5%;
+				vertical-align: middle;
+			}
+		}
+	}
+}

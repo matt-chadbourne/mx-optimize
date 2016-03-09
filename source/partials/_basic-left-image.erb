@@ -1,0 +1,33 @@
+<div class="band basic <% if defined?(bgColor) %><%= bgColor %><% end %> <%= page_classes %>">
+	<div class="wrap left-image clearfix">
+		<div class="left<% if defined?(phoner) %> phoner<% end %> hideMoTab">
+			<img src="<% if defined?(featureImage) %><%= featureImage %><% end %>" />
+		</div>
+
+		<div class="right">
+			<% if defined?(header) %>
+			<h3><%= header %></h3>
+			<% end %>
+
+			<% if defined?(sectionCopy) %>
+			<div class="scopy">
+				<%= sectionCopy %>
+			</div>
+			<% end %>
+
+			<% if defined?(btnLabel) %>
+			<div class='btn'>
+				<a href="<%= btnLink %>" target="<%= btnTarget %>"><span><%= btnLabel %></span></a>
+			</div>
+			<% end %>
+		</div>
+
+		<div class="left<% if defined?(phoner) %> phoner<% end %> hideDesktop">
+			<img src="<% if defined?(featureImage) %><%= featureImage %><% end %>" />
+		</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div class="wedgebox"></div>
+</div>

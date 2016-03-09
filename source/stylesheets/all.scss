@@ -1,0 +1,333 @@
+// Responsive global styles are in responsive.scss
+// Other responsive styles are in the respective partial stylesheet
+// Theming/color styles are in the theming.scss partial stylesheet
+
+///////////////////////////////
+// Global Styles
+///////////////////////////////
+
+@charset "utf-8";
+@import "variables";
+@import "mixins";
+
+* {
+  box-sizing: border-box;
+  font-family: 'Proxima Nova', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-weight: normal;
+  font-style: normal;
+}
+
+body, html {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  color: $in_the_black;
+  @include text(1em, none, initial, 1px);
+  background-color: $white_off;
+}
+
+b, strong {
+  font-family: 'Proxima Nova Bold', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  opacity: 1;
+}
+
+.band {
+  display: block;
+  position: relative;
+  padding: 80px 0;
+  width: 100%;
+}
+
+.wrap {
+  margin: 0;
+  padding: 0 5%;
+  width: 100%;
+  max-width: 960px;
+  height: auto;
+  overflow: auto;
+}
+
+a {
+  text-decoration: none;
+  color: $in_the_black;
+  cursor: pointer !important;
+
+  &:hover, &:active, &:visited {
+    color: $in_the_black;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  // font-family: 'Proxima Nova Light', Helvetica, Arial, sans-serif;
+  text-rendering: optimizelegibility
+}
+
+h1 {
+  position: relative;
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  padding: 15px 0;
+  @include text(1.5rem, uppercase, center, .325em);
+  line-height: 29px;
+}
+
+h3 {
+  margin: 0 0 50px;
+  padding: 15px 0;
+  @include text(1.5rem, uppercase, center, .275em);
+  line-height: 29px;
+  border: solid $in_the_black;
+  border-width: 1px 0;
+}
+
+ul {
+  &.checked {
+    list-style: none;
+
+    li {
+      &:before {
+        display: inline-block;
+        margin: 1px 10px 0 -34px;
+        content: url("/hubfs/icons-products/check-teal.svg");
+        width: 24px;
+        vertical-align: top;
+      }
+    }
+  }
+}
+
+.btn {
+  margin: 0 auto;
+  padding: 10px 0 !important;
+  width: 100%;
+  max-width: 288px;
+  background: url("/hubfs/icons-products/button-teal.svg") no-repeat center center;
+  background-size: contain;
+
+  @include transform (translateY(0));
+
+  a {
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+      display: block;
+      width: 100%;
+      color: $white_off;
+      @include text(1.25rem !important, uppercase, center, .2em, reg);
+    }
+
+    &:hover {
+      color: $white_off !important;
+    }
+  }
+  
+  &:active {
+    @include transform (translateY(3px));
+
+    @include transition (all .1s ease-in-out !important);
+  }
+}
+
+.hidden {
+  display: none !important;
+}
+
+.disable-scroll {
+  height: 100%;
+  overflow: hidden;
+}
+
+
+///////////////////////////////
+// Global Background Colors
+///////////////////////////////
+.bgc-none {
+  background-color: transparent;
+}
+
+.bgc-white {
+  background-color: $white_off;
+
+  .wedgebox {
+    border-top-color: $white_off;
+  }
+}
+
+.bgc-grey {
+  background-color: $greedy_gray;
+
+  .wedgebox {
+    border-top-color: $greedy_gray;
+  }
+}
+
+.bgc-master {
+  background-color: $bank_tealer;
+
+  .btn {
+    background: url("/hubfs/icons-products/button-white.svg") no-repeat center center !important;
+
+    a {
+      &:link,
+      &:visited,
+      &:hover,
+      &:active {
+        color: $bank_tealer;
+      }
+
+      &:hover {
+        color: $bank_tealer !important;
+      }
+    }
+  }
+
+  .wedgebox {
+    border-top-color: $bank_tealer;
+  }
+}
+
+
+///////////////////////////////
+// Global Wedgebox Arrows
+///////////////////////////////
+.wedgebox {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin: auto auto -15px -20px;
+  width: 0;
+  height: 0;
+  border-width: 15px 20px 0;
+  border-style: solid;
+  z-index: 600;
+  border-color: transparent;
+}
+
+
+///////////////////////////////
+// Global Clearfix
+///////////////////////////////
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+
+///////////////////////////////
+// Partials
+///////////////////////////////
+
+// @import "partials/header";
+@import "partials/header";
+@import "partials/body";
+@import "partials/forms";
+@import "partials/footer";
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+// Global Media Queries Only
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////
+// Mobile Only
+///////////////////////////////
+@media screen and (max-width: $mobile_max) {
+  .hideMobile {
+    display: none !important;
+  }
+
+}
+
+///////////////////////////////
+// Tablet -
+///////////////////////////////
+@media screen and (max-width: $tablet_max) {
+  .hideMoTab {
+    display: none !important;
+  }
+}
+
+///////////////////////////////
+// Tablet Only
+///////////////////////////////
+@media screen and (min-width: $tablet_min) and (max-width: $tablet_max) {
+  .hideTablet {
+    display: none !important;
+  }
+}
+
+///////////////////////////////
+// Tablet +
+///////////////////////////////
+@media screen and (min-width: $tablet_min) {
+  h2 {
+    padding: 10px 0;
+    font-size: 2.25rem;
+    line-height: 42px;
+  }
+
+  h3 {
+    padding: 30px 0;
+    font-size: 2rem;
+    line-height: 40px;
+  }
+
+  .hideDeskTab {
+    display: none !important;
+  }
+
+  .wedgebox {
+    margin: auto auto -30px -40px;
+    border-width: 30px 40px 0;
+  }
+}
+
+///////////////////////////////
+// Desktop +
+///////////////////////////////
+@media screen and (min-width: $desktop_min) {
+  .wrap {
+    position: relative;
+    @include spacing(0 auto, 0 5%);
+  }
+
+  .centerer {
+    @include centerVChild;
+  }
+
+  .full {
+    float: left;
+    width: 100%;
+  }
+
+  .left {
+    float: left;
+    margin-right: 2.5% !important;
+    width: 47.5% !important;
+  }
+
+  .right {
+    float: right;
+    margin-left: 2.5% !important;
+    width: 47.5% !important;
+  }
+
+  .hideDesktop {
+    display: none !important;
+  }
+}

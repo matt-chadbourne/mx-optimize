@@ -1,0 +1,42 @@
+///////////////////////////////
+// Mobile +
+///////////////////////////////
+.band.sect-intro {
+	&.bgc-master {
+		color: $white_off;
+	}
+
+	.wrap {
+		.scopy {
+			padding: 16px 0;
+
+			p {
+				margin-bottom: 0;
+				padding: 0;
+				@include text(1rem, none, center, .07em, reg);
+				line-height: 24px;
+				word-spacing: .05em;
+
+				&:first-of-type {
+					margin: 0;
+				}
+			}
+		}
+
+		.btn {
+			margin: 16px auto;
+		}
+	}
+}
+
+///////////////////////////////
+// Tablet +
+///////////////////////////////
+@media screen and (min-width: $tablet_min) {
+}
+
+///////////////////////////////
+// Desktop +
+///////////////////////////////
+@media screen and (min-width: $desktop_min) {
+}

@@ -1,0 +1,41 @@
+<section class="band feed <%= theme %>">
+	<div class="wrap">
+		<% if defined?(header) %>
+		<h2><%= header %></h2>
+		<% end %>
+		<% if defined?(intro) %>
+		<p class="intro"><%= intro %></p>
+		<% end %>
+
+		<div class="rss-wrap">
+			<% if defined?(item1Link) %>
+			<div class="rss-item">
+				<a href="<%= item1Link %>" target="<%= item1Target %>">
+					<h4><%= item1Title %></h4>
+					<p>View Now</p>
+				</a>
+			</div>
+			<% end %>
+
+			<% if defined?(item2Link) %>
+			<div class="rss-item">
+				<a href="<%= item2Link %>" target="<%= item2Target %>">
+					<h4><%= item2Title %></h4>
+					<p>View Now</p>
+				</a>
+			</div>
+			<% end %>
+
+			<% if defined?(item3Link) %>
+			<div class="rss-item">
+				<a href="<%= item3Link %>" target="<%= item3Target %>">
+					<h4><%= item3Title %></h4>
+					<p>View Now</p>
+				</a>
+			</div>
+			<% end %>
+		</div>
+	</div>
+
+	<div class="wedgebox"></div>
+</section>
